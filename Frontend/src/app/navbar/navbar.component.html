@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../../assets/images/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink = "/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"routerLink="/men" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Men
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" routerLink="/mens-shirt">Shirts</a></li>
+              <li><a class="dropdown-item" routerLink="trouser">Trousers</a></li>
+              <li><a class="dropdown-item" href="/mens-suit">Suits</a></li>
+              <li><a class="dropdown-item" routerLink="/wallet">Accessories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Women
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" routerLink ="/women-dresses">Dresses</a></li>
+              <li><a class="dropdown-item" routerLink ="/women-saree">Saree</a></li>
+              <li><a class="dropdown-item" routerLink="/women-footwear">Footwear</a></li>
+              <li><a class="dropdown-item" routerLink="/women-accessories">Accessories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" routerLink ="/about">About</a></li>
+              <!-- <li><a class="dropdown-item" routerLink ="/contact">Contact Us</a></li> -->
+              <li><a class="dropdown-item" routerLink ="/post"> Placeholder</a></li>
+              <li><a class="dropdown-item" routerLink ="/firebase">Firebase</a></li>
+              <!-- <li><a class="dropdown-item" routerLink ="/profile">profile</a></li>
+              <li><a class="dropdown-item" routerLink ="/stripe">stripe</a></li> -->
+              <!-- <li><a class="dropdown-item" routerLink ="/auth">auth</a></li> -->
+              <li><a class="dropdown-item" routerLink ="/mongo_feed">mongo_feed</a></li>
+              <!-- <li><a class="dropdown-item" routerLink ="/local">LocalStorage</a></li> -->
+              <!-- <li><a class="dropdown-item" routerLink ="/admin_login">admin_login</a></li> -->
+              <li><a class="dropdown-item" routerLink ="/feed">Feedback</a></li>
+              <!-- <li><a class="dropdown-item" routerLink ="/search">search</a></li> -->
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/mongo_feed">ALL Products</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products">Deals </a>
+          </li>
+          <!-- <img src="../../assets/images/percentage.png"  id = "percentage"alt=""> -->
+        </ul>
+        <form class="d-flex ms-auto">
+          <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by name" class="search-input" (focus)="show()"  >
+         &nbsp;
+          <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+        </form>
+       
+      </div>
+      <button routerLink="cart" class="btn">
+        <i class="fas fa-cart-plus" id = "cart-logo"></i>
+        <div class="badge bg-danger" id ="cart-badge">{{totalItem}}</div>
+    </button>
+    <button routerLink="login_choice" class="btn"  id = "profile">
+      <i class="fas fa-solid fa-user" style="color: white; border: 1px solid white; padding: 5px; border-radius: 50%;"></i>
+    </button>
+    </div>
+  </nav>
+  <ul *ngIf="showSearch  && searchText != ''" id = "searchList" (mouseleave) = "hide()">
+    <li *ngFor="let StudentItem of all | filter:searchText">
+     <a routerLink="/details/{{StudentItem.id}}" (click)="hi()">{{StudentItem.title }}</a> 
+    </li>
+  </ul>

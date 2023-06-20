@@ -1,0 +1,24 @@
+{
+  "name": "firebase",
+  "version": "1.0.0",
+  "description": "firebase project",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon myserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubh",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^6.10.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "mongoose": "^6.10.0",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "trello": "^0.11.0",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,100 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+#Jewellery{
+    width: 62px;
+    margin-top: 5px;
+}
+
+.item img{
+    width: 64px;
+
+}
+
+.item{
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover{
+    color: blue;
+}
+#product-title, #product-description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}
+/* .card {
+    padding: 20px;
+    margin: 40px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+} */
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.card img{
+    max-height: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transform: scale(0.9);
+}
+img:hover{
+    transform: scale(1.0);
+}
+.card{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+#buy{
+    align-items: flex-start;
+}
+#addToCart{
+    align-items: flex-end;
+    margin-left: 48%;
+}
+.mega-sale {
+    background: linear-gradient(to bottom, #131921, #1b2839);
+
+    color: #fff;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .mega-sale:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  #hn{
+    height: 45px;
+    width: 75px;
+  }
+  #product-title{
+    font-size: 20px;
+  }

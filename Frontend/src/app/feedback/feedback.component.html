@@ -1,0 +1,76 @@
+<div class="container mt-4 myform">
+    <h1 class="text-center">
+        Feedback
+    </h1>
+    <form #register = "ngForm" (ngSubmit)="register.form.valid && registerfn()">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id = "fname" placeholder="First Name...." [(ngModel)]="form.fname" name="fname" #fname = "ngModel" required maxlength="32" [ngClass]="{error: fname.errors && fname.touched}">
+            <div *ngIf="fname.errors && fname.touched">
+                <small class="text-danger" *ngIf="fname.errors['required']">
+                        First Name is required!
+                </small>
+                <small class="text-danger" *ngIf="fname.errors['maxlength']">
+                    Maximum 32 Characters are allowed.
+                </small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id = "lname" placeholder="Last Name...." [(ngModel)]="form.lname" name="lname" #lname = "ngModel" required maxlength="32" [ngClass]="{error: lname.errors && lname.touched}">
+            <div *ngIf="lname.errors && lname.touched">
+                <small class="text-danger" *ngIf="lname.errors['required']">
+                        Last Name is required!
+                </small>
+                <small class="text-danger" *ngIf="lname.errors['maxlength']">
+                    Maximum 32 Characters are allowed.
+                </small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile</label>
+            <input type="text" class="form-control" id = "mobile" placeholder="Mobile Number...." [(ngModel)]="form.mobile" name="mobile" #mobile = "ngModel" required minlength="10" maxlength="10" [pattern]="integerRegex" [ngClass]="{error: mobile.errors && mobile.touched}">
+            <div *ngIf="mobile.errors && mobile.touched">
+                <small class="text-danger" *ngIf="mobile.errors['required']">
+                    Mobile Number is required.
+                </small>
+                <small class="text-danger" *ngIf="mobile.errors['maxlength'] || mobile.errors['minlength'] || mobile.errors['pattern']">
+                    Please Enter a Valid Mobile Number.
+                </small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id = "email" placeholder="email address...." [(ngModel)]="form.email" name="email" #email = "ngModel" required maxlength="32" [pattern]="emailRegex" [ngClass]="{error: email.errors && email.touched}">
+            <div *ngIf="email.errors && email.touched">
+                <small class="text-danger" *ngIf="email.errors['required']">
+                    Email Address is required.
+                </small>
+                <small class="text-danger" *ngIf="email.errors['maxlength']">
+                   Email Address Should be maximum 32 characters Long.
+                </small>
+                <small class="text-danger" *ngIf="email.errors['pattern']">
+                   Please Enter a Valid Email.
+                 </small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="message" class = "form-control" [(ngModel)]="form.message" name="message" #message = "ngModel" required maxlength="200" [ngClass]="{error: message.errors && message.touched}"></textarea>
+            <div *ngIf="message.errors && message.touched">
+                <small class="text-danger" *ngIf="message.errors['required']">
+                    Message is required.
+                </small>
+                <small class="text-danger" *ngIf="message.errors['maxlength']">
+                    Message Should be maximum 200 characters Long.
+                 </small>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input type="submit" value="submit" class="btn btn-success" [disabled]="register.form.status==='INVALID'" id = "sub">
+        </div>
+
+        
+    </form>
+</div>
+<app-footer></app-footer>

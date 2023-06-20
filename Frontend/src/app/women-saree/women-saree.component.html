@@ -1,0 +1,147 @@
+<section class="py-5 bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3" id="sidenav">
+        <button id = "toggle">Toggle</button>
+        <div class="container mt-5" id = "side">
+          <div class="row ">
+            <div class="col-md-12">
+              <div class="d-grid gap-2 d-md-block">
+                <h4>Sort By Price </h4>
+                <hr>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag1" value="" id="flexCheckDefault" (click)="sortWomenDresLow()">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Low To High
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag1" value="" id="flexCheckDefault" (click)="sortWomenDresHigh()">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    High To Low
+                  </label>
+                </div>
+                <br>
+                <h4>Sort By Brand </h4>
+                <hr>
+                <div class="form-check" id = "all">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexDefaultmmaka" (click)="sortByBrandWomen('kalanjali')">
+                  <label class="form-check-label" for="flexCheckDefaultmmaka">
+                    All
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexDefault" (click)="sortByBrandWomen('kalanjali')">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    kalanjali
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexDefault2" (click)="sortByBrandWomen('gaurang')">
+                  <label class="form-check-label" for="flexCheckDefault2">
+                    gaurang
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexDefault3" (click)="sortByBrandWomen('glory')">
+                  <label class="form-check-label" for="flexCheckDefault3">
+                    glory
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexDefault4" (click)="sortByBrandWomen('mimosa')">
+                  <label class="form-check-label" for="flexCheckDefault4">
+                    mimosa
+                  </label>
+                </div>
+                <br>
+                <h4>Sort By Rating </h4>
+                <hr>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckRating" (click)="sortByRating('⭐⭐⭐⭐⭐')">
+                  <label class="form-check-label" for="flexCheckDefault4">
+                    ⭐⭐⭐⭐⭐
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckRating1" (click)="sortByRating('⭐⭐⭐⭐')">
+                  <label class="form-check-label" for="flexCheckRating1">
+                    ⭐⭐⭐⭐
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckRating2" (click)="sortByRating('⭐⭐⭐')">
+                  <label class="form-check-label" for="flexCheckRating2">
+                    ⭐⭐⭐
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckRating3" (click)="sortByRating('⭐⭐')">
+                  <label class="form-check-label" for="flexCheckRating3">
+                    ⭐⭐
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckRating4" (click)="sortByRating('⭐')">
+                  <label class="form-check-label" for="flexCheckRating4">
+                    ⭐
+                  </label>
+                </div>
+                <br>
+                <h4>Sort By Availablity </h4>
+                <hr>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckAvail" (click)="sortByAvailablity(true)">
+                  <label class="form-check-label" for="flexCheckRating4">
+                    In Stock
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="brandtag" value="" id="flexCheckAvail1" (click)="sortByAvailablity(false)">
+                  <label class="form-check-label" for="flexCheckRating4">
+                    Out Of Stock
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 py-5">
+        <h2 class="text-center mb-5">Men's Suits</h2>
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <ng-container *ngFor="let saree of filteredWomenData">
+              <div class="col " >
+                <mat-card class="rd">
+                  <a routerLink="/details/{{saree.id}}">
+                    <img src={{saree.image}} class="card-img-top" alt="Product 1">
+                  </a>
+                  <mat-card-header>
+                    <mat-card-title>{{ saree.title }}</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>
+                    {{ saree.description }}
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">{{saree.rating}}</small>
+                      <small class="text-muted">{{saree.price | currency:'USD'}}</small>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/checkout"  (click)="addtocart(saree)">Buy Now</button>
+                      <button type="button" class="btn btn-sm btn-success ml-auto" (click)="addtocart(saree)">Add to Cart</button>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  </section>
+  
+  <app-footer></app-footer>
+  

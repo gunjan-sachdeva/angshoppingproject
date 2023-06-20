@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="row row-cols-md-3 g-4 px-3 mx-3">
+            <ng-container *ngFor="let meme of memes">
+                <div class="card" style="width: 18rem;" >
+                    <img src="{{meme.url}}" class="card-img-top" alt="...">
+                  </div>
+            </ng-container>
+           
+        </div>
+    </div>
+</div>

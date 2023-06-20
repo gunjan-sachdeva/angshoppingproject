@@ -1,0 +1,55 @@
+<div class="container py-5">
+    <div class="row">
+      <!-- Product Image -->
+      <div class="col-md-6">
+        <img class="img-fluid rounded" src="{{filteredData.image}}" alt="{{filteredData.title}}">
+      </div>
+      <!-- Product Details -->
+      <div class="col-md-6">
+        <h1 class="fw-bold text-uppercase">{{filteredData.title}}</h1>
+        <p class="lead price fw-bold">Price: <span id = "prevprice">${{prevprice}}</span> &nbsp;
+          <strong *ngIf="couponApplied">${{totalpr}}</strong>
+        </p>
+        
+        <div class="d-flex align-items-center rating">
+          {{filteredData.rating}}
+          <span class="text-muted">({{filteredData.rating.length}})</span>
+        </div>
+        <form (submit)="onSubmit()">
+          <div class="mb-3">
+            <label for="couponCode" class="form-label">Coupon Code</label>
+            <input type="text" class="form-control" id="couponCode" [(ngModel)]="couponCode" name="couponCode" required>
+            <strong *ngIf="!couponApplied">*APPLY GUNJAN FOR 100% OFF</strong>
+          <div *ngIf="couponApplied" ><br></div>
+            <div *ngIf="couponApplied" class="alert alert-success" role="alert">
+              Coupon code <strong>"{{couponCode}}"</strong> applied successfully!
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-sm" id="apply">Apply Coupon</button>
+        </form>
+       
+        
+        
+        <hr>
+        <h4 class="fw-bold">Product Description</h4>
+        <p class="lead">{{filteredData.description}}</p>
+        <div class="d-flex align-items-center mb-3">
+          <label class="me-3">Quantity:</label>
+          <div class="input-group">
+            <input type="number" class="form-control" [(ngModel)]="quantity">
+            <button class="btn btn-outline-primary" (click)="increase()">+</button>
+            <button class="btn btn-outline-primary" (click)="decrease()">-</button>
+          </div>
+        </div>
+        
+        
+        <!-- <p>total price : {{totalpr}}</p> -->
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary btn-lg add-to-cart" type="button" (click)="addtocart(filteredData)" id="add">Add to Cart
+            <i class="fas fa-cart-plus" id = "cart-logo"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

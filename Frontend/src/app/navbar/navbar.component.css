@@ -1,0 +1,75 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+img{
+    max-height: 100px;
+    width: 200px;
+    border-radius: 25px;
+}
+nav{
+    background: linear-gradient(to bottom, #131921, #1b2839);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#search{
+    background-color: #883d1a;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.dropdown-item:hover{
+    background-color: #131921;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#cart-logo{
+    font-size: 30px;
+    color: white;
+}
+#cart-badge{
+    font-size: 10px;
+}
+#percentage{
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    color: white;
+}
+a{
+    font-weight: 500 !important;
+}
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  #searchList {
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 210px;
+    margin-left: 930px;
+    z-index: 1000;
+    /* border: 1px solid red; */
+    list-style: none;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+
+  }
+#searchList a {
+    text-decoration: none;
+    color: black;
+}
+  

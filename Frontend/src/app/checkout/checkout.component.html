@@ -1,0 +1,155 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="container mt-4 myform">
+                <h1 class="text-center">
+                    CheckOut
+                </h1>
+            
+                    <form #register = "ngForm" (ngSubmit)="register.form.valid && registerfn()" (submit)="onSubmit()" name = "register">
+                        <div class="mb-3">
+                            <label for="fname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id = "fname" placeholder="First Name...." [(ngModel)]="form.fname" name="fname" #fname = "ngModel" required maxlength="32" [ngClass]="{error: fname.errors && fname.touched}">
+                            <div *ngIf="fname.errors && fname.touched">
+                                <small class="text-danger" *ngIf="fname.errors['required']">
+                                        First Name is required!
+                                </small>
+                                <small class="text-danger" *ngIf="fname.errors['maxlength']">
+                                    Maximum 32 Characters are allowed.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id = "lname" placeholder="Last Name...." [(ngModel)]="form.lname" name="lname" #lname = "ngModel" required maxlength="32" [ngClass]="{error: lname.errors && lname.touched}">
+                            <div *ngIf="lname.errors && lname.touched">
+                                <small class="text-danger" *ngIf="lname.errors['required']">
+                                        Last Name is required!
+                                </small>
+                                <small class="text-danger" *ngIf="lname.errors['maxlength']">
+                                    Maximum 32 Characters are allowed.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="text" class="form-control" id = "mobile" placeholder="Mobile Number...." [(ngModel)]="form.mobile" name="mobile" #mobile = "ngModel" required minlength="10" maxlength="10" [pattern]="integerRegex" [ngClass]="{error: mobile.errors && mobile.touched}">
+                            <div *ngIf="mobile.errors && mobile.touched">
+                                <small class="text-danger" *ngIf="mobile.errors['required']">
+                                    Mobile Number is required.
+                                </small>
+                                <small class="text-danger" *ngIf="mobile.errors['maxlength'] || mobile.errors['minlength'] || mobile.errors['pattern']">
+                                    Please Enter a Valid Mobile Number.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id = "email" placeholder="email address...." [(ngModel)]="form.email" name="email" #email = "ngModel" required maxlength="32" [pattern]="emailRegex" [ngClass]="{error: email.errors && email.touched}">
+                            <div *ngIf="email.errors && email.touched">
+                                <small class="text-danger" *ngIf="email.errors['required']">
+                                    Email Address is required.
+                                </small>
+                                <small class="text-danger" *ngIf="email.errors['maxlength']">
+                                   Email Address Should be maximum 32 characters Long.
+                                </small>
+                                <small class="text-danger" *ngIf="email.errors['pattern']">
+                                   Please Enter a Valid Email.
+                                 </small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Delivery address </label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="message" class = "form-control" [(ngModel)]="form.message" name="message" #message = "ngModel" required maxlength="200" [ngClass]="{error: message.errors && message.touched}"></textarea>
+                            <div *ngIf="message.errors && message.touched">
+                                <small class="text-danger" *ngIf="message.errors['required']">
+                                    Message is required.
+                                </small>
+                                <small class="text-danger" *ngIf="message.errors['maxlength']">
+                                    Message Should be maximum 200 characters Long.
+                                 </small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" value="submit" class="btn btn-success" [disabled]="register.form.status==='INVALID'" id = "sub">
+                        </div>
+                
+                        
+                    </form>
+                </div>
+        </div>
+        <div class="col-md-4 mt-4 py-2  bx">
+            <div class="billing-details " style="border: 1px solid black; border-radius: 10px;">
+                <h2 class="px-2">Billing Details</h2>
+                <h3 class="px-2">Personal Details</h3>
+                
+                <div class="row px-2" *ngFor="let data of myArray, let  i = index">
+                    <hr>
+                  <div class="col-md-6">
+                    <p><strong>First Name:</strong>{{myArray[i].fname}}</p>
+                    <p><strong>Last Name:</strong> {{myArray[i].lname}}</p>
+                    <p><strong>Email:</strong> {{myArray[i].email}}</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p><strong>Phone:</strong> {{myArray[i].mobile}}</p>
+                    <p><strong>Address:</strong> {{myArray[i].message}}</p>
+                    
+                  </div>
+                  
+                  <hr>
+                  
+              
+                </div>
+                
+                <div class="row px-2">
+                    <ng-container *ngIf="products.length != 0"  >
+                        <p><strong>Product Information</strong> </p>
+                        <div *ngFor="let product of products, let i = index">
+                            <p><strong>Product {{i + 1}}</strong> </p>
+                            <div class="col-md-6">
+                                <p><strong>title:</strong> {{products[i].title}}</p>
+                                <p><strong>price:</strong> {{products[i].price}}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>inStock:</strong> {{products[i].inStock | instock }}</p>
+                                <p><strong>quantity:</strong> {{products[i].quantity}}</p>
+                            </div>
+                          
+                         
+                          
+                        </div>
+                      
+                    </ng-container>
+                  </div>
+                  <hr>
+                  <h2 class="px-2" >
+                    Total: <span id = "price"> </span>
+                  </h2>
+                  <div style="margin-left: 40%; margin-bottom: 5%;">
+                    <button class="btn btn-primary " (click)="orderDetails();startNodeApplication()">Place Order</button>
+                    <div id = "stripe">
+                        <app-stripe></app-stripe>
+                        
+                    </div>
+                    <div id = "paypal">
+                        <app-paypal></app-paypal>
+                    </div>
+                    <div *ngIf="transactionId">
+                        <app-confirmation></app-confirmation>
+                    </div>
+                    
+                    <button (click)="startNodeApplication()" id ="mail"> Send Confirmation mail.</button>
+                  </div>
+                
+              </div>
+              
+        </div>
+    </div>
+</div>
+
+ 
+  
+
+
+<app-footer></app-footer>

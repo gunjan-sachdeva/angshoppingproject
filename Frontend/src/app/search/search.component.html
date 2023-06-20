@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="search-hero">
+            <input type="text" name="search" [(ngModel)] = "searchText"
+            placeholder="Search by name">
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>    
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">image</th>
+            <th scope="col">title</th>  
+            <th scope="col">description</th>
+            <th scope="col">price</th>
+            <th scope="col">total</th>
+            <th scope="col">rating</th>  
+            <th scope="col">brand</th>
+            <th scope="col">instock</th>  
+            <th scope="col">quantity</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let StudentItem of all | filter:searchText">
+            <td>{{StudentItem.id }}</td>
+            <td>{{StudentItem.image }}</td>
+            <td>{{StudentItem.title }}</td>
+            <td>{{StudentItem.description  | uppercase}}</td>
+            <td>{{StudentItem.price }}</td>
+            <td>{{StudentItem.total }}</td>
+            <td>{{StudentItem.rating  | uppercase}}</td>
+            <td>{{StudentItem.brand }}</td>
+            <td>{{StudentItem.instock }}</td>
+            <td>{{StudentItem.quantity }}</td>
+        </tbody>
+</table>

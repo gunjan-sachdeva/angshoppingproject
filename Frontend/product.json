@@ -1,0 +1,1375 @@
+ [
+    {
+      "id": 30,
+      "image": "../../assets/images/feature1.jpg",
+      "title": "Van Heusen V",
+      "description": "Dot Men's Poly Viscose Shawl Collar Suit",
+      "price": 19.99,
+      "total": 19.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 31,
+      "image": "../../assets/images/feature2.jpg",
+      "title": "Van Heusen Men's",
+      "description": "Men's Synthetic Notch Lapel Suit.",
+      "price": 29.99,
+      "total": 29.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐"
+    },
+    {
+      "id": 32,
+      "image": "../../assets/images/feature3.jpg",
+      "title": "Van Heusen Men Suit",
+      "description": "Dress Set",
+      "quantity": 1,
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 7770,
+      "image": "../../assets/images/wallet1.jpg",
+      "title": "WildHorn Men's",
+      "description": "Leather Wallet",
+      "price": 24.99,
+      "total": 24.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "wildhorn",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7771,
+      "image": "../../assets/images/wallet2.jpg",
+      "title": "Hornbull Men's",
+      "description": "Leather Wallet",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "hornbull",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7772,
+      "image": "../../assets/images/wallet3.jpg",
+      "title": "Tommy Hilfiger Men's",
+      "description": "Leather Wallet",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "tommy",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7773,
+      "image": "../../assets/images/wallet4.jpg",
+      "title": "Levi's Men's",
+      "description": "Leather Wallet",
+      "price": 22.99,
+      "total": 22.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "levi",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7774,
+      "image": "../../assets/images/wallet5.jpg",
+      "title": "Woodland Men's",
+      "description": "Leather Wallet",
+      "price": 26.99,
+      "total": 26.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "woodland",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7775,
+      "image": "../../assets/images/wallet6.jpg",
+      "title": "Puma Men's",
+      "description": "Leather Wallet",
+      "price": 21.99,
+      "total": 21.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "puma",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7776,
+      "image": "../../assets/images/wallet7.jpg",
+      "title": "Fossil Men's",
+      "description": "Leather Wallet",
+      "price": 32.99,
+      "total": 32.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "fossil",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7777,
+      "image": "../../assets/images/wallet8.jpg",
+      "title": "Montblanc Men's",
+      "description": "Leather Wallet",
+      "price": 54.99,
+      "total": 54.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "montblanc",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7778,
+      "image": "../../assets/images/wallet9.jpg",
+      "title": "Titan Men's",
+      "description": "Leather Wallet",
+      "price": 28.99,
+      "total": 28.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "titan",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 7779,
+      "image": "../../assets/images/wallet10.jpg",
+      "title": "Louis Philippe Men's",
+      "description": "Leather Wallet",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "louis",
+      "instock": true,
+      "quantity": 1
+    },
+    
+    {
+      "id": 5550,
+      "image": "../../assets/images/trouser1.jpg",
+      "title": "Allen Solly Men's",
+      "description": "Regular Fit Solid Formal Trousers",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "allen",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5551,
+      "image": "../../assets/images/trouser2.jpg",
+      "title": "Blackberrys Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 49.99,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "blackberrys",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5552,
+      "image": "../../assets/images/trouser3.jpg",
+      "title": "Louis Philippe Men's",
+      "description": "Classic Regular Fit Formal Trousers",
+      "price": 59.99,
+      "total": 59.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "louis",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5553,
+      "image": "../../assets/images/trouser4.jpg",
+      "title": "Van Heusen Men's",
+      "description": "Slim Fit Formal Trousers",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "van",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5554,
+      "image": "../../assets/images/trouser5.jpg",
+      "title": "Raymond Men's",
+      "description": "Regular Fit Formal Trousers",
+      "price": 49.99,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "raymond",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5555,
+      "image": "../../assets/images/trouser6.jpg",
+      "title": "Peter England Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 44.99,
+      "total": 44.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "peter",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5556,
+      "image": "../../assets/images/trouser7.jpg",
+      "title": "Arrow Men's",
+      "description": "Regular Fit Formal Trousers",
+      "price": 54.99,
+      "total": 54.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "arrow",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5557,
+      "image": "../../assets/images/trouser8.jpg",
+      "title": "Park Avenue Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 49.99,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "park",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5558,
+      "image": "../../assets/images/trouser9.jpg",
+      "title": "John Players Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "john",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5559,
+      "image": "../../assets/images/trouser10.jpg",
+      "title": "Levi's Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 59.99,
+      "total": 59.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "levi",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5560,
+      "image": "../../assets/images/trouser11.jpg",
+      "title": "Indian Terrain Men's",
+      "description": "Slim Fit Solid Formal Trousers",
+      "price": 44.99,
+      "total": 44.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "indian",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 5561,
+      "image": "../../assets/images/trouser12.jpg",
+      "title": "Wills Lifestyle Men's",
+      "description": "Regular Fit Formal Trousers",
+      "price": 54.99,
+      "total": 54.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "wills",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "instock": true,
+      "quantity": 1,
+      "id": 201,
+      "image": "../../assets/images/dress1.jpg",
+      "title": "Coattire A R Collection",
+      "description": "Women's Crepe Designer Print Short Dress Black",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "biba"
+    },
+    {
+      "id": 202,
+      "quantity": 1,
+      "instock": false,
+      "image": "../../assets/images/dress2.jpg",
+      "title": "Marks & Spencer",
+      "description": "Women's Viscose A-Line Knee-Length Casual Dress.",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "levi"
+    },
+    {
+      "id": 203,
+      "quantity": 1,
+      "instock": false,
+      "image": "../../assets/images/dress3.jpg",
+      "title": "Marks & Spencer",
+      "description": "Women's Rayon Classic Knee-Length Casual Dress",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "biba"
+    },
+    {
+      "id": 204,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress5.jpg",
+      "title": "RARE",
+      "description": "Women's Synthetic a-line Knee-Long Dress",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "allen"
+    },
+    {
+      "id": 205,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress6.jpg",
+      "title": "Harpa",
+      "description": "Women Maxi A-Line Dress",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "biba"
+    },
+    {
+      "id": 206,
+      "quantity": 1,
+      "image": "../../assets/images/dress7.jpg",
+      "title": "Miss Chase ",
+      "description": "Polyester Blend Three Piece Suit ",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "levi"
+    },
+    {
+      "id": 207,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress8.jpg",
+      "title": "Leriya Fashion ",
+      "description": "Western Dresses for Women. Short A-Line Dress for Girls ",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "biba"
+    },
+    {
+      "id": 208,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress9.jpg",
+      "title": "PURVAJA",
+      "description": "Women’s High-Low Knee Length Dress",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "levi"
+    },
+    {
+      "id": 209,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress10.jpg",
+      "title": "Sheetal Associates",
+      "description": "Women's Sleeveless V-Neck Fit & Flare Casual Maxi Dress",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "biba"
+    },
+    {
+      "id": 210,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress11.jpg",
+      "title": "Lymio Dresses for Women",
+      "description": "Western Dresses for Women",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "allen"
+    },
+    {
+      "id": 211,
+      "quantity": 1,
+      "instock": true,
+      "image": "../../assets/images/dress12.jpg",
+      "title": "Eden & Ivy Women's",
+      "description": "White Two Piece Suit Business Pants Set",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "allen"
+    },
+    {
+      "id": 212,
+      "instock": true,
+      "image": "../../assets/images/dress13.jpg",
+      "title": "My Swag Women's",
+      "description": "Printed Sleeveless Round Neck Asymmetric Dress",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "aurelia"
+    },
+    {
+      "id": 1101,
+      "image": "../../assets/images/shirt1.jpg",
+      "title": "Globus Men",
+      "description": "Peach Solid Cotton Regular Fit Casual Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "globus",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1102,
+      "image": "../../assets/images/shirt2.jpg",
+      "title": "Globus Men",
+      "description": "Salmon Solid Cotton Regular Fit Casual Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "globus",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1103,
+      "image": "../../assets/images/shirt3.jpg",
+      "title": "Amazon Brand",
+      "description": "Symbol Men's Regular Casual Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "amazon",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1104,
+      "image": "../../assets/images/shirt4.jpg",
+      "title": "Dennis Lingo Men's",
+      "description": "Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "dennis",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1105,
+      "image": "../../assets/images/shirt5.jpg",
+      "title": "Diverse Men's",
+      "description": "Regular Fit Formal Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "diverse",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1106,
+      "image": "../../assets/images/shirt6.jpg",
+      "title": "Amazon Brand",
+      "description": "Symbol Men's Slim Fit Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "amazon",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1107,
+      "image": "../../assets/images/shirt7.jpg",
+      "title": "Dennis Lingo Men's",
+      "description": "Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "dennis",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1108,
+      "image": "../../assets/images/shirt8.jpg",
+      "title": "Dennis Lingo Men's",
+      "description": "Casual Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "dennis",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1109,
+      "image": "../../assets/images/shirt9.jpg",
+      "title": "Red Tape Cotton",
+      "description": "Casual Full Sleeves Cotton Shirt",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "red",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 1110,
+      "image": "../../assets/images/shirt10.jpg",
+      "title": "HUGREY",
+      "description": "Mens Casual Shirt (Large, Maroon)",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "hugrey",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 501,
+      "image": "../../assets/images/feature1.jpg",
+      "title": "Van Heusen V ",
+      "description": "Dot Men's Poly Viscose Shawl Collar Suit ",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 502,
+      "image": "../../assets/images/feature2.jpg",
+      "title": "Van Heusen Men's",
+      "description": "Men's Synthetic Notch Lapel Suit. ",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 503,
+      "image": "../../assets/images/feature3.jpg",
+      "title": "Van Heusen Men Suit ",
+      "description": "Dress Set ",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 504,
+      "image": "../../assets/images/suit1.jpg",
+      "title": "Van Heusen Men ",
+      "description": "Business Suit Pants Set ",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 505,
+      "image": "../../assets/images/suit2.jpg",
+      "title": "Van Heusen Men's Polyester",
+      "description": " Blend Three Piece Suit-Dress Set  ",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": false,
+      "quantity": 1
+    },
+    {
+      "id": 506,
+      "image": "../../assets/images/suit3.jpg",
+      "title": "Van Heusen Men's  ",
+      "description": "Polyester Blend Three Piece Suit ",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "blackberry",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 507,
+      "image": "../../assets/images/suit4.jpg",
+      "title": "Van Heusen ",
+      "description": "Men Suit ",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 508,
+      "image": "../../assets/images/suit5.jpg",
+      "title": "Van Heusen Men's Rayon",
+      "description": "White Two Piece Suit Business Pants Set ",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "blackberry",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 509,
+      "image": "../../assets/images/suit6.jpg",
+      "title": "Van Heusen ",
+      "description": "Men Suit ",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gucci",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 510,
+      "image": "../../assets/images/suit7.jpg",
+      "title": "Raymond ",
+      "description": "Dark Grey Suit ",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "blackberry",
+      "instock": false,
+      "quantity": 1
+    },
+    {
+      "id": 511,
+      "image": "../../assets/images/suit8.jpg",
+      "title": "Van Heusen Men's Cotton Blend ",
+      "description": "White Two Piece Suit Business Pants Set ",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "van",
+      "instock": true,
+      "quantity": 1
+    },
+    {
+      "id": 512,
+      "image": "../../assets/images/suit9.jpg",
+      "title": "Van Heusen Men Suit ",
+      "description": "Polyester Blend Four Piece Suit-Dress Set  ",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "quantity": 1,
+      "brand": "raymond",
+      "instock": true
+    },
+    {
+      "id": 1,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "price": 22.3,
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 259
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mens Cotton Jacket",
+      "price": 55.99,
+      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 500
+      }
+    },
+    {
+      "id": 4,
+      "title": "Mens Casual Slim Fit",
+      "price": 15.99,
+      "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.1,
+        "count": 430
+      }
+    },
+    {
+      "id": 5,
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "price": 695,
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 400
+      }
+    },
+    {
+      "id": 6,
+      "title": "Solid Gold Petite Micropave ",
+      "price": 168,
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 70
+      }
+    },
+    {
+      "id": 7,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 400
+      }
+    },
+    {
+      "id": 8,
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price": 10.99,
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 1.9,
+        "count": 100
+      }
+    },
+    {
+      "id": 9,
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "rating": {
+        "rate": 3.3,
+        "count": 203
+      }
+    },
+    {
+      "id": 10,
+      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 470
+      }
+    },
+    {
+      "id": 11,
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": 109,
+      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 319
+      }
+    },
+    {
+      "id": 12,
+      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "price": 114,
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 400
+      }
+    },
+    {
+      "id": 13,
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 599,
+      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 250
+      }
+    },
+    {
+      "id": 14,
+      "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "price": 999.99,
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.2,
+        "count": 140
+      }
+    },
+    {
+      "id": 15,
+      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "price": 56.99,
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 2.6,
+        "count": 235
+      }
+    },
+    {
+      "id": 16,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 340
+      }
+    },
+    {
+      "id": 17,
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price": 39.99,
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 679
+      }
+    },
+    {
+      "id": 18,
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "price": 9.85,
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 130
+      }
+    },
+    {
+      "id": 19,
+      "title": "Opna Women's Short Sleeve Moisture",
+      "price": 7.95,
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 146
+      }
+    },
+    {
+      "id": 20,
+      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "price": 12.99,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+      "rating": {
+        "rate": 3.6,
+        "count": 145
+      }
+    },
+    {
+      "id": 401,
+      "image": "../../assets/images/saree1.jpg",
+      "title": "Red Silk Saree",
+      "description": "Traditional Indian Red Silk Saree with Gold Border",
+      "price": 49.99,
+      "total": 49.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "mimosa"
+    },
+    {
+      "id": 402,
+      "image": "../../assets/images/saree2.jpg",
+      "title": "Blue Georgette Saree",
+      "description": "Blue Georgette Saree with Silver Embroidery",
+      "price": 59.99,
+      "total": 59.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "glory"
+    },
+    {
+      "id": 403,
+      "image": "../../assets/images/saree3.jpg",
+      "title": "Green Cotton Saree",
+      "description": "Light Green Cotton Saree with Floral Print",
+      "price": 39.99,
+      "total": 39.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐",
+      "brand": "mimosa"
+    },
+    {
+      "id": 404,
+      "image": "../../assets/images/saree4.jpg",
+      "title": "Yellow Banarasi Silk Saree",
+      "description": "Yellow Banarasi Silk Saree with Zari Border",
+      "price": 79.99,
+      "total": 79.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "gaurang"
+    },
+    {
+      "id": 405,
+      "image": "../../assets/images/saree5.jpg",
+      "title": "Pink Chiffon Saree",
+      "description": "Pink Chiffon Saree with Silver Embellishments",
+      "price": 69.99,
+      "total": 69.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "mimosa"
+    },
+    {
+      "id": 406,
+      "image": "../../assets/images/saree6.jpg",
+      "title": "Orange Net Saree",
+      "description": "Orange Net Saree with Gold Sequins",
+      "price": 49.99,
+      "total": 49.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "mimosa"
+    },
+    {
+      "id": 407,
+      "image": "../../assets/images/saree7.jpg",
+      "title": "Black Crepe Saree",
+      "description": "Black Crepe Saree with White Stripes",
+      "price": 59.99,
+      "total": 59.99,
+      "rating": "⭐⭐⭐",
+      "instock": true,
+      "quantity": 1,
+      "brand": "kalanjali"
+    },
+    {
+      "id": 408,
+      "image": "../../assets/images/saree8.jpg",
+      "title": "Purple Velvet Saree",
+      "description": "Purple Velvet Saree with Silver Border",
+      "price": 89.99,
+      "total": 89.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "instock": null,
+      "quantity": 1,
+      "brand": "mimosa"
+    },
+    {
+      "id": 409,
+      "image": "../../assets/images/saree9.jpg",
+      "title": "Turquoise Silk Saree",
+      "description": "Turquoise Silk Saree with Gold Embroidery",
+      "price": 79.99,
+      "total": 79.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": true,
+      "quantity": 1,
+      "brand": "kalanjali"
+    },
+    {
+      "id": 410,
+      "image": "../../assets/images/saree10.jpg",
+      "title": "Magenta Satin Saree",
+      "description": "Magenta Satin Saree with Gold Embellishments",
+      "price": 69.99,
+      "total": 69.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "instock": true,
+      "quantity": 1,
+      "brand": "mimosa"
+    },
+    {
+      "id": 411,
+      "image": "../../assets/images/saree11.jpg",
+      "title": "Green Banarasi Saree",
+      "description": "Green Banarasi Saree with Zari Buttas",
+      "price": 89.99,
+      "total": 89.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": true,
+      "quantity": 1,
+      "brand": "kalanjali"
+    },
+    {
+      "id": 412,
+      "image": "../../assets/images/saree12.jpg",
+      "title": "Chiffon Saree",
+      "description": "Women's Chiffon Saree with Zari Border",
+      "price": 49.99,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": true,
+      "quantity": 1,
+      "brand": "mimosa"
+    },
+    {
+      "id": "2201",
+      "image": "../../assets/images/footwear1.jpg",
+      "title": "Black Heels",
+      "description": "Women's High Heel Shoes",
+      "price": 49.99,
+      "quantity": 1,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "adidas",
+      "instock": true
+      },
+      {
+      "id": "2202",
+      "image": "../../assets/images/footwear2.jpg",
+      "title": "White Sneakers",
+      "description": "Women's Casual Shoes",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "reebok",
+      "quantity": 1,
+      "instock": true
+      },
+      {
+      "id": "2203",
+      "image": "../../assets/images/footwear3.jpg",
+      "title": "Leather Boots",
+      "description": "Women's Knee-High Boots",
+      "price": 89.99,
+      "total": 89.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "adidas",
+      "quantity": 1,
+      "instock": true
+      },
+      {
+      "id": "2204",
+      "image": "../../assets/images/footwear4.jpg",
+      "title": "Ballet Flats",
+      "description": "Women's Comfortable Flat Shoes",
+      "price": 29.99,
+      "total": 29.99,
+      "quantity": 1,
+      "instock": true,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "adidas"
+      },
+      {
+      "id": "2205",
+      "image": "../../assets/images/footwear5.jpg",
+      "title": "Wedge Sandals",
+      "description": "Women's Platform Sandals",
+      "price": 59.99,
+      "total": 59.99,
+      "quantity": 1,
+      "instock": true,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "sparx"
+      },
+      {
+      "id": "2206",
+      "image": "../../assets/images/footwear6.jpg",
+      "title": "Ankle Boots",
+      "description": "Women's Chunky Heel Booties",
+      "price": 69.99,
+      "total": 69.99,
+      "instock": true,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "adidas"
+      },
+      {
+      "id": "2207",
+      "image": "../../assets/images/footwear7.jpg",
+      "title": "Espadrilles",
+      "description": "Women's Summer Shoes",
+      "price": 39.99,
+      "quantity": 1,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "instock": false,
+      "brand": "reebok"
+      },
+      {
+        "id": "2208",
+        "image": "../../assets/images/footwear8.jpg",
+        "title": "Stiletto Heels",
+        "description": "Women's Pointed Toe Shoes",
+        "price": 49.99,
+        "quantity": 1,
+        "total": 49.99,
+        "rating": "⭐⭐⭐⭐",
+        "instock": true,
+        "brand": "adidas"
+      },
+      {
+        "id": "2209",
+        "image": "../../assets/images/footwear9.jpg",
+        "title": "Lace-Up Boots",
+        "description": "Women's Combat Boots",
+        "price": 79.99,
+        "quantity": 1,
+        "total": 79.99,
+        "rating": "⭐⭐⭐⭐⭐",
+        "instock": true,
+        "brand": "nike"
+      },
+      {
+        "id": "2210",
+        "image": "../../assets/images/footwear10.jpg",
+        "title": "Flat Sandals",
+        "description": "Women's Strappy Sandals",
+        "price": 29.99,
+        "quantity": 1,
+        "total": 29.99,
+        "rating": "⭐⭐⭐⭐",
+        "instock": false,
+        "brand": "adidas"
+      },
+      {
+        "id": "2211",
+        "image": "../../assets/images/footwear11.jpg",
+        "title": "Pumps",
+        "description": "Women's Classic High Heel Shoes",
+        "price": 59.99,
+        "quantity": 1,
+        "total": 59.99,
+        "rating": "⭐⭐⭐⭐⭐",
+        "instock": true,
+        "brand": "nike"
+      },
+      {
+        "id": "2212",
+        "image": "../../assets/images/footwear12.jpg",
+        "title": "Sneaker Boots",
+        "description": "Women's Fashionable High-Top Sneakers",
+        "price": 69.99,
+        "quantity": 1,
+        "total": 69.99,
+        "rating": "⭐⭐⭐⭐",
+        "instock": true,
+        "brand": "sparx"
+      },
+      {
+        "id": 112,
+        "image": "../../assets/images/purse1.jpg",
+        "title": "Leather Crossbody Bag",
+        "description": "Stylish and functional leather crossbody bag for women",
+        "price": 49.99,
+        "quantity": 1,
+        "total": 49.99,
+        "rating": "⭐⭐⭐⭐⭐",
+        "brand": "lavie",
+        "instock": true
+        },
+        {
+        "id": 111,
+        "image": "../../assets/images/purse2.jpg",
+        "title": "Canvas Tote Bag",
+        "description": "Large capacity canvas tote bag for women",
+        "price": 39.99,
+        "total": 39.99,
+        "rating": "⭐⭐⭐⭐",
+        "quantity": 1,
+        "brand": "ladida",
+        "instock": false
+        },
+        {
+        "id": 110,
+        "image": "../../assets/images/purse3.jpg",
+        "title": "Shoulder Bag",
+        "description": "Casual shoulder bag for women",
+        "price": 29.99,
+        "total": 29.99,
+        "rating": "⭐⭐⭐⭐",
+        "quantity": 1,
+        "brand": "lavie",
+        "instock": true
+        },
+        {
+        "id": 109,
+        "image": "../../assets/images/purse4.jpg",
+        "title": "Satchel Bag",
+        "description": "Elegant satchel bag for women",
+        "price": 59.99,
+        "total": 59.99,
+        "quantity": 1,
+        "rating": "⭐⭐⭐⭐⭐",
+        "brand": "ladida",
+        "instock": false
+        },
+        {
+        "id": 108,
+        "image": "../../assets/images/purse5.jpg",
+        "title": "Clutch Bag",
+        "description": "Chic and versatile clutch bag for women",
+        "price": 19.99,
+        "total": 19.99,
+        "rating": "⭐⭐⭐⭐",
+        "quantity": 1,
+        "brand": "lavie",
+        "instock": true
+        },
+        {
+        "id": 107,
+        "image": "../../assets/images/purse6.jpg",
+        "title": "Backpack",
+        "description": "Functional and stylish backpack for women",
+        "price": 49.99,
+        "total": 49.99,
+        "rating": "⭐⭐⭐⭐",
+        "quantity": 1,
+        "brand": "hidesign",
+        "instock": true
+        },
+        {
+        "id": 106,
+        "image": "../../assets/images/purse7.jpg",
+        "title": "Hobo Bag",
+        "description": "Casual hobo bag for women",
+        "price": 39.99,
+        "quantity": 1,
+        "total": 39.99,
+        "rating": "⭐⭐⭐⭐",
+        "brand": "lavie",
+        "instock": true
+        },
+        {
+          "id": 105,
+          "image": "../../assets/images/purse8.jpg",
+          "title": "Tote Bag",
+          "description": "Classic and versatile tote bag for women",
+          "price": 29.99,
+          "total": 29.99,
+          "quantity": 1,
+          "rating": "⭐⭐⭐⭐⭐",
+          "brand": "esbeda",
+          "instock": true
+          },
+          {
+          "id": 104,
+          "image": "../../assets/images/purse9.jpg",
+          "title": "Crossbody Clutch",
+          "description": "Elegant crossbody clutch for women",
+          "price": 59.99,
+          "total": 59.99,
+          "quantity": 1,
+          "rating": "⭐⭐⭐⭐",
+          "brand": "lavie",
+          "instock": true
+          },
+          {
+          "id": 103,
+          "image": "../../assets/images/purse10.jpg",
+          "title": "Mini Backpack",
+          "description": "Small and cute mini backpack for women",
+          "price": 19.99,
+          "total": 19.99,
+          "quantity": 1,
+          "rating": "⭐⭐⭐⭐⭐",
+          "brand": "hidesign",
+          "instock": true
+          },
+          {
+          "id": 102,
+          "image": "../../assets/images/purse11.jpg",
+          "title": "Sling Bag",
+          "description": "Casual and convenient sling bag for women",
+          "price": 49.99,
+          "total": 49.99,
+          "quantity": 1,
+          "rating": "⭐⭐⭐⭐",
+          "brand": "lavie",
+          "instock": true
+          },
+          {
+          "id": 101,
+          "image": "../../assets/images/purse12.jpg",
+          "title": "Wristlet",
+          "description": "Versatile and stylish wristlet for women",
+          "price": 39.99,
+          "total": 39.99,
+          "quantity": 1,
+          "rating": "⭐⭐⭐⭐",
+          "brand": "esbeda",
+          "instock": true
+          }
+  ]

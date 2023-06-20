@@ -1,0 +1,56 @@
+<div class="container my-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>Contact Us</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="contactform" (ngSubmit)="submit()">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name*</label>
+              <input type="text" class="form-control" formControlName="firstName" required>
+              <div *ngIf="contactform.controls['firstName'].touched && contactform.controls['firstName'].invalid" class="text-danger">
+                <div *ngIf="contactform.controls['firstName'].errors.required">First name is required</div>
+                <div *ngIf="contactform.controls['firstName'].errors.pattern">First name can only contain letters</div>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name*</label>
+              <input type="text" class="form-control" formControlName="lastName" required>
+              <div *ngIf="contactform.controls['lastName'].touched && contactform.controls['lastName'].invalid" class="text-danger">
+                <div *ngIf="contactform.controls['lastName'].errors.required">Last name is required</div>
+                <div *ngIf="contactform.controls['lastName'].errors.pattern">Last name can only contain letters</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" formControlName="email" required>
+              <div *ngIf="contactform.controls['email'].touched && contactform.controls['email'].invalid" class="text-danger">
+                <div *ngIf="contactform.controls['email'].errors.required">Email is required</div>
+                <div *ngIf="contactform.controls['email'].errors.email">Invalid email format</div>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" class="form-control" formControlName="phone" pattern="[0-9]{10}" required>
+              <div *ngIf="contactform.controls['phone'].touched && contactform.controls['phone'].invalid" class="text-danger">
+                <div *ngIf="contactform.controls['phone'].errors.required">Phone number is required</div>
+                <div *ngIf="contactform.controls['phone'].errors.pattern">Phone number must contain 10 digits</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" formControlName="message" rows="4"></textarea>
+          </div>
+          <div class="py-3">
+            <app-captcha></app-captcha>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

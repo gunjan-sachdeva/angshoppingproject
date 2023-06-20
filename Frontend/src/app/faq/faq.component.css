@@ -1,0 +1,27 @@
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  mat-panel-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  mat-expansion-panel {
+    margin-bottom: 10px;
+  }
+  
+  mat-expansion-panel:last-child {
+    margin-bottom: 0;
+  }
+  
+  mat-expansion-panel-header {
+    background-color: #f5f5f5;
+  }
+  
+  mat-expansion-panel-header:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+  

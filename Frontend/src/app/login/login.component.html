@@ -1,0 +1,40 @@
+<div class="container mt-4 myform">
+    <h1 class="text-center">Login</h1>
+    <form #register="ngForm" (ngSubmit)="register.form.valid && registerfn()" action="http://localhost:8080/login" method="post">
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Please Enter Your Email Address..."
+          [(ngModel)]="form.email" name="email" #email="ngModel" required maxlength="32" [pattern]="emailRegex"
+          [ngClass]="{ 'is-invalid': email.errors && email.touched }">
+        <div *ngIf="email.errors && email.touched" class="invalid-feedback">
+          <small class="text-danger" *ngIf="email.errors['required']">Email Address is required.</small>
+          <small class="text-danger" *ngIf="email.errors['maxlength']">Email Address Should be maximum 32 characters long.</small>
+          <small class="text-danger" *ngIf="email.errors['pattern']">Please Enter a Valid Email.</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" id="password" placeholder="Please Enter Your Password..."
+          [(ngModel)]="form.password" name="password" #password="ngModel" required minlength="8" [pattern]="passwordRegex"
+          [ngClass]="{ 'is-invalid': password.errors && password.touched }">
+        <div *ngIf="password.errors && password.touched" class="invalid-feedback">
+          <small class="text-danger" *ngIf="password.errors['required']">Password is Required.</small>
+          <small class="text-danger" *ngIf="password.errors['minlength']">Password Should At least be 8 characters long.</small>
+          <small class="text-danger" *ngIf="password.errors['pattern']">Please Enter a Valid Password.</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="submit" value="Submit" class="btn btn-success" [disabled]="register.form.status==='INVALID'" id="sub" (click)="sendData(); loginForm()" >
+      </div>
+    </form>
+    <div class="register-link">
+      Not a registered user? <a routerLink="/register">Register here</a>
+    </div>
+  </div>
+  <div class="row mt-5" *ngIf="localStorageData">
+    <div class="col-12">
+        <h4>Email: {{ localStorageData.email }}</h4>
+        <h4>Password: {{ localStorageData.password }}</h4>
+    </div>
+</div>
+  <router-outlet></router-outlet>
+
+  

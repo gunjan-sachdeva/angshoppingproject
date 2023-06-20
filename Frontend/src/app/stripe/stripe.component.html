@@ -1,0 +1,25 @@
+<!-- <div class="container mt-5">
+    <h2>Stripe Checkout</h2>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <button (click)="pay(20)" class="btn btn-primary btn-block">Pay $20</button>
+      </div>
+      <!-- <div class="col-md-4">
+        <button (click)="pay(30)" class="btn btn-success btn-block">Pay $30</button>
+      </div>
+      <div class="col-md-4">
+        <button (click)="pay(50)" class="btn btn-info btn-block">Pay $50</button>
+      </div>     -->
+    <!-- </div> -->
+    <!-- <p class="mt-5">
+        Try it out using the test card number <b>4242 4242 4242 4242</b>, a random three-digit CVC number, any expiration date in the future, and a random five-digit U.S. ZIP code.
+    </p> -->
+  <!-- </div> --> 
+  <button (click)="pay(20)" class="btn btn-primary btn-block pay-button">
+    <span class="button-text">Pay with Stripe</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
+      <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+      <line x1="1" y1="10" x2="23" y2="10"></line>
+    </svg>
+  </button>
+  

@@ -1,0 +1,18 @@
+/* Custom CSS for the profile created message and login button */
+.logged-in-message {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-danger.custom-btn {
+    background-color: #dc3545;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .btn-danger.custom-btn:hover {
+    background-color: #c82333;
+  }
+  

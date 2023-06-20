@@ -1,0 +1,42 @@
+<div class="container py-2">
+    <div class="row">
+      <!-- Sign Up Section -->
+      <div *ngIf="!isSignedIn" class="col-md-6">
+        <h2 class="text-center">Sign Up</h2>
+        <form>
+          <div class="mb-3">
+            <label for="emailSignup" class="form-label"><b>Email</b></label>
+            <input type="text" id="emailSignup" #emailSignup class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="passwordSignup" class="form-label"><b>Password</b></label>
+            <input type="password" id="passwordSignup" #passwordSignup class="form-control" placeholder="Enter your password">
+          </div>
+          <button (click)="onSignup(emailSignup.value, passwordSignup.value)" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+  
+      <!-- Sign In Section -->
+      <div *ngIf="!isSignedIn" class="col-md-6">
+        <h2 class="text-center">Sign In</h2>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label"><b>Email</b></label>
+            <input type="text" id="email" #email class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label"><b>Password</b></label>
+            <input type="password" id="password" #password class="form-control" placeholder="Enter your password">
+          </div>
+          <button (click)="onSignin(email.value, password.value)" class="btn btn-primary">Sign In</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Home Component -->
+    <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+  
+    <!-- Authentication Message -->
+    <p class="auth-message">Authentication</p>
+  </div>
+  

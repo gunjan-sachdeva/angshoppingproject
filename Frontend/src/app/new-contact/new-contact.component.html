@@ -1,0 +1,48 @@
+<h1 class="text-center fw-bold my-2">Contact Us</h1>
+<div class="container">
+    <form [formGroup]="contactForm" class="form-group">
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName = "name">
+      </mat-form-field>
+      <small *ngIf="contactForm.get('name').invalid && 
+      contactForm.get('name').touched">Name is required</small>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName = "email">
+      </mat-form-field>
+      <small *ngIf="contactForm.get('email').invalid && 
+      contactForm.get('email').touched">Name is required</small>
+
+      <mat-form-field>
+        <mat-label>Order Number</mat-label>
+        <input matInput formControlName="orderNumber">
+      </mat-form-field>
+      <small *ngIf="contactForm.get('orderNumber').invalid && 
+      contactForm.get('email').touched">Order Number is required</small>
+
+     
+
+      <mat-form-field>
+        <mat-label>Select</mat-label>
+        <mat-select formControlName = "subject">
+            <mat-option value="Product Selection">Product Selection</mat-option>
+            <mat-option value="Website Navigation">Website Navigation</mat-option>
+            <mat-option value="User Interface">User Interface</mat-option>
+            <mat-option value="Checkout Process">Checkout Process</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <small *ngIf="contactForm.get('subject').invalid && 
+      contactForm.get('subject').touched"> is required</small>
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName = "message"></textarea>
+      </mat-form-field>
+      <small *ngIf="contactForm.get('message').invalid && 
+      contactForm.get('message').touched">Name is required</small>
+      <app-captcha></app-captcha>
+      <br><br>
+      <button type="reset" [disabled]="contactForm.invalid"  mat-raised-button color="primary" (click)="submitData(contactForm.value)">Send Message</button>
+      <p *ngIf="isSubmit" class="submitMessage">{{submitMessage}}</p>
+    </form>
+</div>

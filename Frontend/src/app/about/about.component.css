@@ -1,0 +1,53 @@
+#about {
+    background-color: #f8f9fa;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  /* Company history section */
+.company-history {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.company-history h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.company-history p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.company-history img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.carousel-item {
+  width: 100%;
+}
+.card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

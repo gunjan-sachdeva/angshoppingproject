@@ -1,0 +1,107 @@
+<!-- <div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a class="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a >
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+           
+            
+            <h6>Electronics</h6>
+        </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+           
+            
+            <h6>Fashion</h6>
+        </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="" id = "Jewellery">
+            
+            
+            <h6>Jewellery</h6>
+        </a>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 id = "product-title">{{item.title}}</h5>
+                <p id = "product-description">{{item.description}}</p>
+                <p><strong>
+                    Price : 
+                </strong>
+                ${{item.price}}</p>
+                <button class="btn btn-primary">
+                    Add To Cart
+                </button>
+            </div>
+        </ng-container>
+        
+    </div>
+</div> -->
+
+<div class="container mega-sale mt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="jumbotron text-center">
+          <h1 class="display-4">Mega Sale!</h1>
+          <p class="lead">Get up to 50% off on select items.</p>
+          <hr class="my-4">
+          <p>Shop now and save big.</p>
+          <h4>Coupon Code: GUNJAN <img src="../../../assets/images/100.png" alt="" id = "hn"></h4>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5"></h2>
+      <div class="row">
+     <ng-container *ngFor="let item of productList">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <a routerLink="/details/{{item.id}}">
+                <img src={{item.image}} class="card-img-top" alt="Product 1">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title" id = "product-title">
+                  <strong>{{item.title}}</strong>
+                  </h5>
+                <p class="card-text" id = "product-description">{{item.description}} </p>
+                <p class="card-text">{{item.rating}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <small class="text-muted">{{dress.rating}}</small> -->
+                  <small class="text-muted"><strong>
+                    Price : 
+                
+                </strong>
+                <span style="text-decoration: line-through;">${{item.price + 11 | number}}</span>
+                 ${{item.price}}</small>
+                </div>
+                <div class="mt-3 d-flex">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id = "buy">Buy Now</button>
+                  <button type="button" class="btn btn-sm btn-success ml-auto" (click)="addtocart(item)" id = "addToCart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+     </ng-container>
+      </div>
+    </div>
+  </section>

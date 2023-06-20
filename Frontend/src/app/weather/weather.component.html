@@ -1,0 +1,18 @@
+
+
+<form action="">
+    <div class="form-group">
+      <input type="text" name="cityName" id="cityName" class="form-control" placeholder="Enter a city name" [(ngModel)]="city">
+      <button type="button" class="btn btn-primary" (click)="getWeather()">Get Weather</button>
+    </div>
+  </form>
+  
+
+<div *ngIf="weatherData">
+    <h2>{{weatherData.name}}</h2>
+    <h2>{{weatherData.main.temp}}</h2>
+    <h2>{{weatherData.main.humidity}}</h2>
+    <h2>{{weatherData.weather[0].description}}</h2>
+
+
+</div>

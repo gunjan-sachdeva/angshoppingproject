@@ -1,0 +1,33 @@
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #343a40;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .dropdown-menu a {
+    color: #343a40;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #e9ecef;
+  }
+  
+  select.form-select {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #343a40;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  select.form-select option {
+    background-color: #fff;
+    color: #343a40;
+  }
+  .choice {
+    margin-top: 20px;
+  }

@@ -1,0 +1,42 @@
+<section class="intro">
+  
+    <div class="bg-image h-100" style="background-image: url(https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img7.jpg);">
+      <h1 class="text-center text-light py-2" >{{userName}}'s Orders</h1>
+      <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="card mask-custom">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-borderless text-white mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col">PRODUCT NAME</th>
+                          <th scope="col">DESCRIPTION</th>
+                          <th scope="col">PRICE</th>
+                          <th scope="col">QUANTITY</th>
+                          <th scope="col">ADDRESS</th>
+                          <th scope="col">MOBILE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of array,let user of users ,let i = index">
+                          <th scope="row">{{array[i].title}}</th>
+                          <td>{{array[i].description}}</td>
+                          <td>{{array[i].price}}</td>
+                          <td>{{array[i].quantity}}</td>
+                          <td>{{user.address}}</td>
+                          <td>{{user.mobile}}</td>
+                        </tr>
+                                              </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,61 @@
+.logged-in-message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  /* Custom CSS for the logged-in message and logout button */
+.logged-in-message {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-danger.custom-btn {
+  background-color: #dc3545;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-danger.custom-btn:hover {
+  background-color: #c82333;
+}
+.container {
+  padding-top: 50px;
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+.logged-in-message {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-danger.custom-btn {
+  background-color: #dc3545;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-danger.custom-btn:hover {
+  background-color: #c82333;
+}
+

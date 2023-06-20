@@ -1,0 +1,23 @@
+img{
+    max-height: 400px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transform: scale(0.9);
+}
+img:hover{
+    transform: scale(1.0);
+}
+.card{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+#toggle{
+    width: 90%;
+    border-radius: 10%;
+}
+.card-title{
+    font-size: 20px !important;
+    line-height: 23px;
+    font-weight: 500;
+}

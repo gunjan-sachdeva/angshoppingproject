@@ -1,0 +1,141 @@
+
+
+<div *ngIf="isLoggedIn">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">VESTIRIUM DASHBOARD</a>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" id = "stlist">
+          <div class="mx-5"></div>
+          <li class="nav-item">
+            <button class="btn btn-success mx-5" (click)="showSection('form')">Form</button>
+            <!-- <a href="#" (click)="showSection('form')" >Form</a> -->
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-5" (click)="showSection('data')">Data</button>
+            <!-- <a href="#" (click)="showSection('data')" >data</a> -->
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-5" (click)="showSection('show')">Show</button>
+            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-5" (click)="showSection('tickets')">Tickets</button>
+            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-success mx-5" (click)="showSection('messages')">Messages</button>
+            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  <div class="container mt-4"  *ngIf="selectedSection === 'form'">
+      <div class="card">
+              <h1 class="text-center">Product Creation</h1>
+              
+  <form>
+    <div class="form-group">
+      <label>id</label>
+      <input type="text" class="form-control"  [(ngModel)]="id" [ngModelOptions]="{standalone: true}" id="id" placeholder="Enter id"> 
+    </div>
+  
+      <div class="form-group">
+        <label>Image</label>
+        <input type="text" [(ngModel)]="image" [ngModelOptions]="{standalone: true}"  class="form-control" id="image" placeholder="Enter image"> 
+      </div>
+  
+      
+  
+        <div class="form-group">
+          <label>title</label>
+          <input type="text" class="form-control" [(ngModel)]="title" [ngModelOptions]="{standalone: true}" id="title" placeholder="Enter title"> 
+        </div>
+        <div class="form-group">
+          <label>description</label>
+          <input type="text" class="form-control" [(ngModel)]="description" [ngModelOptions]="{standalone: true}" id="description" placeholder="Enter description"> 
+        </div>
+        <div class="form-group">
+          <label>price</label>
+          <input type="text" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}" id="price" placeholder="Enter price"> 
+        </div>
+        <div class="form-group">
+          <label>total</label>
+          <input type="text" class="form-control" [(ngModel)]="total" [ngModelOptions]="{standalone: true}" id="total" placeholder="Enter total"> 
+        </div>
+        <div class="form-group">
+          <label>rating</label>
+          <input type="text" class="form-control" [(ngModel)]="rating" [ngModelOptions]="{standalone: true}" id="rating" placeholder="Enter rating"> 
+        </div>
+        <div class="form-group">
+          <label>brand</label>
+          <input type="text" class="form-control" [(ngModel)]="brand" [ngModelOptions]="{standalone: true}" id="brand" placeholder="Enter brand"> 
+        </div>
+        <div class="form-group">
+          <label>instock</label>
+          <input type="text" class="form-control" [(ngModel)]="instock" [ngModelOptions]="{standalone: true}" id="instock" placeholder="Enter instock"> 
+        </div>
+        <div class="form-group">
+          <label>quantity</label>
+          <input type="text" class="form-control" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" id="quantity" placeholder="Enter quantity"> 
+        </div>
+      <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+  
+  <div class="container mt-4" *ngIf="selectedSection === 'data'" >
+   <h1>Available Products</h1>
+  <table class="table">
+    <thead>    
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">image</th>
+        <th scope="col">title</th>  
+        <th scope="col">description</th>
+        <th scope="col">price</th>
+        <th scope="col">total</th>
+        <th scope="col">rating</th>  
+        <th scope="col">brand</th>
+        <th scope="col">instock</th>  
+        <th scope="col">quantity</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let StudentItem of StudentArray">
+        <td>{{StudentItem.id  | uppercase}}</td>
+        <td>{{StudentItem.image }}</td>
+        <td>{{StudentItem.title }}</td>
+        <td>{{StudentItem.description  | uppercase}}</td>
+        <td>{{StudentItem.price }}</td>
+        <td>{{StudentItem.total }}</td>
+        <td>{{StudentItem.rating  | uppercase}}</td>
+        <td>{{StudentItem.brand }}</td>
+        <td>{{StudentItem.instock }}</td>
+        <td>{{StudentItem.quantity }}</td>
+        <td>
+          <button type="button" class="btn btn-success my-2" (click)="setUpdate(StudentItem)">Edit</button>
+          
+          <button type="button" class="btn btn-danger" (click)="setDelete(StudentItem)">Delete</button>            
+        </td>
+      </tr>          
+    </tbody>
+  </table>
+  
+  </div>
+  <div class="container" *ngIf="selectedSection === 'show'">
+  <app-display></app-display>
+  </div>
+  <div class="container" *ngIf="selectedSection === 'tickets'">
+    <app-tickets></app-tickets>
+    </div>
+    <div class="container" *ngIf="selectedSection === 'messages'">
+      <app-messages></app-messages>
+      </div>
+</div>

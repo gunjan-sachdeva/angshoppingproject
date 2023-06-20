@@ -1,0 +1,26 @@
+<div class="container py-5 my">
+    <div class="logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" alt="VESTIRIUM Logo" width="200">
+    </div>
+    <h1>Order Successful</h1>
+    <p>Confirmation works!</p>
+    <p>Your transaction ID is: <b>{{transactionID}}</b></p>
+    <table>
+        <tr>
+            <th>Customer Name</th>
+            <td>{{users[0].name}}</td>
+        </tr>
+        <tr>
+            <th>Customer Email</th>
+            <td>{{users[0].email}}</td>
+        </tr>
+        <tr>
+            <th>Customer Address</th>
+            <td>{{users[0].address}}</td>
+        </tr>
+        <tr>
+            <th>Grand Total</th>
+            <td>{{grandTotal | currency: 'USD'}}</td>
+        </tr>
+    </table>
+</div>

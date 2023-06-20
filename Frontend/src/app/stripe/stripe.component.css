@@ -1,0 +1,29 @@
+.pay-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .button-text {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .feather {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #5f27cd;
+    border-color: #5f27cd;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4c1a9c;
+    border-color: #4c1a9c;
+  }
+  

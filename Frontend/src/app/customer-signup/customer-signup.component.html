@@ -1,0 +1,27 @@
+<div class="container my-5" *ngIf="!isSignedUp">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center">Sign Up</h2>
+        <form>
+          <div class="mb-3">
+            <label for="emailSignup" class="form-label"><b>Email</b></label>
+            <input type="text" id="emailSignup" #emailSignup class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="passwordSignup" class="form-label"><b>Password</b></label>
+            <input type="password" id="passwordSignup" #passwordSignup class="form-control" placeholder="Enter your password">
+          </div>
+          <button (click)="onSignup(emailSignup.value, passwordSignup.value); success()" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+      <!-- Home Component -->
+      <div class="container">
+        <div class="row justify-content-center">
+            <app-signup-res *ngIf="isSignedUp" (isLogout)="handleLogout()"></app-signup-res>
+        </div>
+      </div>
+     
+  
+    
