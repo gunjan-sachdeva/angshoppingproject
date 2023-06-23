@@ -91,4 +91,15 @@
     color: #fff;
     background-color: #dc3545;
   }
- 
+ .navbar-nav{
+  display: flex;
+  justify-content: space-evenly;
+ }
+ a:hover{
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ *{
+  font-weight: bold;
+ }

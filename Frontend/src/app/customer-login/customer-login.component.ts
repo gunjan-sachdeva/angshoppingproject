@@ -8,14 +8,17 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class CustomerLoginComponent {
   isSignedIn = false;
+  searchText:any;
   constructor(private firebaseService : FirebaseService){}
   ngOnInit() {
     if(localStorage.getItem('user')!== null)
     this.isSignedIn = true;
     else
     this.isSignedIn = false;
-
+console.log(this.searchText)
   }
+
+  
   async onSignup(email:string, password:string){
     await this.firebaseService.signup(email,password)
     if(this.firebaseService.isLoggedIn)

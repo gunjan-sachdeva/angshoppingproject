@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from '../services/cart.service';
 import { ApiService } from '../services/api.service';
+import { NavigationEnd } from '@angular/router';
 import * as $ from 'jquery';
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,9 @@ export class ProductDetailsComponent implements OnInit {
   filteredData:any;
   all:any = [];
   api_data = [];
-constructor(private activeRoute: ActivatedRoute, private http : HttpClient, private cartService : CartService, private api : ApiService){
+constructor(private activeRoute: ActivatedRoute, private http : HttpClient, private cartService : CartService, private api : ApiService
+  , private router: Router){
+    this.detail()
    
 }
 prevprice :any;
@@ -26,6 +29,13 @@ totalpr :any;
 
 
 ngOnInit(): void {
+  this.router.events.subscribe((event)=>{
+    if(event instanceof NavigationEnd){
+      this.detail();
+    }
+  })
+}
+detail(): void {
   let productId = this.activeRoute.snapshot.paramMap.get('productId');
   //  console.warn(productId);
 

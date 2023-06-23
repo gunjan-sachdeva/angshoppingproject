@@ -80,11 +80,11 @@ a{
 .card-title{
   font-size: 20px !important;
 }
-input{
+/* input{
     width: 50%;
    margin-left: 280px;
    border-radius: 5px;
-}
+} */
 #search{
     background-color: brown;
     color: white;

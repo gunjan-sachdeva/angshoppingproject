@@ -6,6 +6,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 export class FirebaseService {
 
   isLoggedIn = false;
+  name = '';
 
   constructor(public firebaseAuth : AngularFireAuth) { }
 

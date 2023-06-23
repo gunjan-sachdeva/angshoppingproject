@@ -84,6 +84,9 @@ import { MenTrouserComponent } from './men-trouser/men-trouser.component';
 import { MensWalletComponent } from './mens-wallet/mens-wallet.component';
 import { SearchComponent } from './search/search.component';
 import { FeedbackMongoComponent } from './feedback-mongo/feedback-mongo.component';
+import { OrderFormComponent } from './order-form/order-form.component';
+import { OrdersComponent } from './orders/orders.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 
 
 
@@ -161,6 +164,9 @@ import { FeedbackMongoComponent } from './feedback-mongo/feedback-mongo.componen
     MensWalletComponent,
     SearchComponent,
     FeedbackMongoComponent,
+    OrderFormComponent,
+    OrdersComponent,
+    DynamicFormComponent,
     
   ],
   imports: [

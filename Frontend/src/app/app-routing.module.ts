@@ -46,9 +46,11 @@ import { WomenDressesComponent } from './women-dresses/women-dresses.component';
 import { WomenFootwearComponent } from './women-footwear/women-footwear.component';
 import { WomenSareeComponent } from './women-saree/women-saree.component';
 import { FeedbackMongoComponent } from './feedback-mongo/feedback-mongo.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 const routes: Routes = [
 
   { path: 'admin_login', component: AdminLoginComponent },
+  {path:'dynamic', component:DynamicFormComponent},
   {path:'mongo_feed', component: FeedbackMongoComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [Auth1Guard] },
   { path: 'access-denied', component: AccessDeniedComponent },

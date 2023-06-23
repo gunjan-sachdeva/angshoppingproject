@@ -27,7 +27,7 @@ export class CheckoutComponent {
   myArray: any;
   form = {
     fname: "",
-    lname: "",
+    pname: "",
     mobile: "",
     email: "",
     message: ""
@@ -40,28 +40,38 @@ export class CheckoutComponent {
   resetForm() {
     this.form = {
       fname: '',
-      lname: '',
+      pname: '',
       mobile: '',
       email: '',
       message: ''
     };
   }
  data :any
-  registerfn(){
-    console.log(this.form);
-    this.myArray.push(this.form);
-    this.resetForm();
-    this.data = {
-      fname: this.form.fname,
-      lname: this.form.lname,
-      mobile: this.form.mobile,
-      email: this.form.email,
-      message: this.form.message
-     
+ registerfn() {
+  console.log(this.form);
+  this.myArray.push(this.form);
+  this.resetForm();
+  this.data = {
+    fname: this.form.fname,
+    pname: this.form.pname,
+    mobile: this.form.mobile,
+    email: this.form.email,
+    message: this.form.message,
+    products: this.products  // Include the products array
+  };
+  console.log(this.myArray[0].email);
+  console.log(this.data);
+  this.http.post('http://localhost:8000/orders', this.myArray[0]).subscribe(
+    (response) => {
+      console.log('Order saved successfully:', response);
+    },
+    (error) => {
+      console.error('Error saving order:', error);
     }
-    console.log(this.myArray[0].email);
-    console.log(this.data)
-  }
+  );
+}
+
+  
  
   onSubmit(){
     

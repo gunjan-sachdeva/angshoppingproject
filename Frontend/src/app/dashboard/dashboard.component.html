@@ -1,37 +1,43 @@
 
 
 <div *ngIf="isLoggedIn">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">VESTIRIUM DASHBOARD</a>
-      
+      <div class="d-flex justify-content-start">
+        <a class="navbar-brand" href="#">VESTIRIUM DASHBOARD</a>
+      </div>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto" id = "stlist">
-          <div class="mx-5"></div>
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <button class="btn btn-success mx-5" (click)="showSection('form')">Form</button>
-            <!-- <a href="#" (click)="showSection('form')" >Form</a> -->
+            <a class="nav-link" (click)="showSection('form')">Create Product</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-success mx-5" (click)="showSection('data')">Data</button>
-            <!-- <a href="#" (click)="showSection('data')" >data</a> -->
+            <a class="nav-link" (click)="showSection('data')">Products</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-success mx-5" (click)="showSection('show')">Show</button>
-            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+            <a class="nav-link" (click)="showSection('show')">Available Products</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-success mx-5" (click)="showSection('tickets')">Tickets</button>
-            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+            <a class="nav-link" (click)="showSection('tickets')">Tickets</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-success mx-5" (click)="showSection('messages')">Messages</button>
-            <!-- <a href="#" (click)="showSection('show')" >show</a> -->
+            <a class="nav-link" (click)="showSection('messages')">Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="showSection('Orders')">Orders</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
+  
   
   
   
@@ -41,47 +47,47 @@
               
   <form>
     <div class="form-group">
-      <label>id</label>
+      <label>Product ID</label>
       <input type="text" class="form-control"  [(ngModel)]="id" [ngModelOptions]="{standalone: true}" id="id" placeholder="Enter id"> 
     </div>
   
       <div class="form-group">
-        <label>Image</label>
+        <label>Product Image Path</label>
         <input type="text" [(ngModel)]="image" [ngModelOptions]="{standalone: true}"  class="form-control" id="image" placeholder="Enter image"> 
       </div>
   
       
   
         <div class="form-group">
-          <label>title</label>
+          <label>Product Title</label>
           <input type="text" class="form-control" [(ngModel)]="title" [ngModelOptions]="{standalone: true}" id="title" placeholder="Enter title"> 
         </div>
         <div class="form-group">
-          <label>description</label>
+          <label>Product Description</label>
           <input type="text" class="form-control" [(ngModel)]="description" [ngModelOptions]="{standalone: true}" id="description" placeholder="Enter description"> 
         </div>
         <div class="form-group">
-          <label>price</label>
+          <label>Product Price</label>
           <input type="text" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}" id="price" placeholder="Enter price"> 
         </div>
         <div class="form-group">
-          <label>total</label>
+          <label>Product Total Price ( After Taxes )</label>
           <input type="text" class="form-control" [(ngModel)]="total" [ngModelOptions]="{standalone: true}" id="total" placeholder="Enter total"> 
         </div>
         <div class="form-group">
-          <label>rating</label>
+          <label>Product Rating</label>
           <input type="text" class="form-control" [(ngModel)]="rating" [ngModelOptions]="{standalone: true}" id="rating" placeholder="Enter rating"> 
         </div>
         <div class="form-group">
-          <label>brand</label>
+          <label>Product Brand</label>
           <input type="text" class="form-control" [(ngModel)]="brand" [ngModelOptions]="{standalone: true}" id="brand" placeholder="Enter brand"> 
         </div>
         <div class="form-group">
-          <label>instock</label>
+          <label>Is Product in Stock ( true or false ) ?</label>
           <input type="text" class="form-control" [(ngModel)]="instock" [ngModelOptions]="{standalone: true}" id="instock" placeholder="Enter instock"> 
         </div>
         <div class="form-group">
-          <label>quantity</label>
+          <label>Product Quantity Available: </label>
           <input type="text" class="form-control" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" id="quantity" placeholder="Enter quantity"> 
         </div>
       <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
@@ -137,5 +143,8 @@
     </div>
     <div class="container" *ngIf="selectedSection === 'messages'">
       <app-messages></app-messages>
+      </div>
+      <div class="container" *ngIf="selectedSection === 'Orders'">
+        <app-orders></app-orders>
       </div>
 </div>

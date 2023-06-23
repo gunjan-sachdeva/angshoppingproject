@@ -10,34 +10,50 @@ import Swal from 'sweetalert2';
 export class CustomerSignupComponent {
   isSignedIn = false;
   isSignedUp = false;
-  constructor(private firebaseService : FirebaseService){}
-  ngOnInit() {
-    if(localStorage.getItem('user')!== null)
-    this.isSignedIn = true;
-    else
-    this.isSignedIn = false;
+  name: string = '';
 
+  constructor(private firebaseService: FirebaseService) {}
+
+  ngOnInit() {
+    if (localStorage.getItem('user') !== null)
+      this.isSignedIn = true;
+    else
+      this.isSignedIn = false;
+
+    this.firebaseService.name = this.name;
   }
-  async onSignup(email:string, password:string){
-    await this.firebaseService.signup(email,password)
-    if(this.firebaseService.isLoggedIn)
-    this.isSignedUp = true;
+
+  async onSignup(email: string, password: string) {
+    await this.firebaseService.signup(email, password);
+    if (this.firebaseService.isLoggedIn) {
+      this.isSignedUp = true;
+      this.name = this.extractName(email);
+    }
   }
-  async onSignin(email:string, password:string){
-    await this.firebaseService.signin(email,password)
-    if(this.firebaseService.isLoggedIn)
-    this.isSignedIn = true;
+
+  async onSignin(email: string, password: string) {
+    await this.firebaseService.signin(email, password);
+    if (this.firebaseService.isLoggedIn)
+      this.isSignedIn = true;
   }
-  handleLogout(){
+
+  handleLogout() {
     this.isSignedIn = false;
   }
-  success(){
+
+  extractName(email: string): string {
+    const name = email.substring(0, email.indexOf('@'));
+    console.log(name)
+    return name;
+  }
+
+  success() {
     Swal.fire({
       position: 'top-end',
       icon: 'success',
       title: 'User Created Successfully.',
       showConfirmButton: false,
       timer: 1500
-    })
+    });
   }
 }

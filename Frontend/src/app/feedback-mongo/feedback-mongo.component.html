@@ -1,9 +1,13 @@
 <h2 class="text-center mb-5 my-2">All Products</h2>
-<form class="d-flex ms-auto">
-    <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by name" class="search-input"   >
-   &nbsp;
-    <button class="btn btn-outline-success" type="submit" id="search">Search</button>
-  </form>
+<div class="row" >
+  <div class="col-md-12 col-sm-10">
+    <form class="d-flex ms-auto justify-content-center">
+      <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by name" class="col-md-6 search-input"   >
+     &nbsp;
+      <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+    </form>
+  </div>
+</div>
 <div class="row">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <ng-container *ngFor="let card of data  | filter:searchText">

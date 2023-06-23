@@ -19,6 +19,7 @@
       <!-- Home Component -->
       <div class="container">
         <div class="row justify-content-center">
+          {{name}}
             <app-signup-res *ngIf="isSignedUp" (isLogout)="handleLogout()"></app-signup-res>
         </div>
       </div>

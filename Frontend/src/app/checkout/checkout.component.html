@@ -9,7 +9,7 @@
             
                     <form #register = "ngForm" (ngSubmit)="register.form.valid && registerfn()" (submit)="onSubmit()" name = "register">
                         <div class="mb-3">
-                            <label for="fname" class="form-label">First Name</label>
+                            <label for="fname" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id = "fname" placeholder="First Name...." [(ngModel)]="form.fname" name="fname" #fname = "ngModel" required maxlength="32" [ngClass]="{error: fname.errors && fname.touched}">
                             <div *ngIf="fname.errors && fname.touched">
                                 <small class="text-danger" *ngIf="fname.errors['required']">
@@ -21,19 +21,19 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="lname" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id = "lname" placeholder="Last Name...." [(ngModel)]="form.lname" name="lname" #lname = "ngModel" required maxlength="32" [ngClass]="{error: lname.errors && lname.touched}">
-                            <div *ngIf="lname.errors && lname.touched">
-                                <small class="text-danger" *ngIf="lname.errors['required']">
-                                        Last Name is required!
+                            <label for="lname" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id = "pname" placeholder="Last Name...." [(ngModel)]="form.pname" name="lname" #pname = "ngModel" required maxlength="32" [ngClass]="{error: pname.errors && pname.touched}">
+                            <div *ngIf="pname.errors && pname.touched">
+                                <small class="text-danger" *ngIf="pname.errors['required']">
+                                    Product Name is required!
                                 </small>
-                                <small class="text-danger" *ngIf="lname.errors['maxlength']">
+                                <small class="text-danger" *ngIf="pname.errors['maxlength']">
                                     Maximum 32 Characters are allowed.
                                 </small>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="mobile" class="form-label">Mobile</label>
+                            <label for="mobile" class="form-label">Mobile Number</label>
                             <input type="text" class="form-control" id = "mobile" placeholder="Mobile Number...." [(ngModel)]="form.mobile" name="mobile" #mobile = "ngModel" required minlength="10" maxlength="10" [pattern]="integerRegex" [ngClass]="{error: mobile.errors && mobile.touched}">
                             <div *ngIf="mobile.errors && mobile.touched">
                                 <small class="text-danger" *ngIf="mobile.errors['required']">
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id = "email" placeholder="email address...." [(ngModel)]="form.email" name="email" #email = "ngModel" required maxlength="32" [pattern]="emailRegex" [ngClass]="{error: email.errors && email.touched}">
                             <div *ngIf="email.errors && email.touched">
                                 <small class="text-danger" *ngIf="email.errors['required']">
