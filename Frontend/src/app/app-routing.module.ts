@@ -47,12 +47,15 @@ import { WomenFootwearComponent } from './women-footwear/women-footwear.componen
 import { WomenSareeComponent } from './women-saree/women-saree.component';
 import { FeedbackMongoComponent } from './feedback-mongo/feedback-mongo.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { MainloginComponent } from './mainlogin/mainlogin.component';
+import { MainsignupComponent } from './mainsignup/mainsignup.component';
+import { AccessGuard } from './access.guard';
 const routes: Routes = [
 
   { path: 'admin_login', component: AdminLoginComponent },
   {path:'dynamic', component:DynamicFormComponent},
   {path:'mongo_feed', component: FeedbackMongoComponent},
-  { path: 'dashboard', component: DashboardComponent, canActivate: [Auth1Guard] },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [Auth1Guard, AccessGuard] },
   { path: 'access-denied', component: AccessDeniedComponent },
   {path: 'stripe', component:StripeComponent},
   {path:'',component:HomepageComponent},
@@ -67,6 +70,8 @@ const routes: Routes = [
   {path:'news', component:NewsComponent},
   {path:'feedback', component:FeedbackComponent},
   {path:'about', component:AboutComponent},
+  {path:'mainlogin', component:MainloginComponent},
+  {path:'mainsignup', component:MainsignupComponent},
   {
     path: 'feed', component: FeedbackMaterialComponent
   },
@@ -84,11 +89,11 @@ const routes: Routes = [
   },
   {
     path:'customer_signup',
-    component: CustomerSignupComponent
+    component: MainsignupComponent
   },
   {
     path:'customer_login',
-    component: CustomerLoginComponent
+    component: MainloginComponent
   },
   {
     path:'login_choice',
@@ -147,10 +152,7 @@ const routes: Routes = [
     path: 'firebase',
     component: FirebaseFetchComponent
   },
-  {
-    path: "profile",
-    component: UserprofileComponent
-  }
+  { path: 'profile', component: UserprofileComponent, canActivate: [AccessGuard] },
 ];
 
 @NgModule({

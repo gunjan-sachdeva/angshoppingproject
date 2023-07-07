@@ -18,7 +18,7 @@ export class TicketsComponent {
 
   tickets() {
  
-    this.http.get("http://localhost:8000/myfeed")
+    this.http.get("http://localhost:8000/contacts")
     .subscribe((resultData: any)=>
     {
       

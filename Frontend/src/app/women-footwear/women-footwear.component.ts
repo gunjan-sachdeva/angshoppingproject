@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from '../services/cart.service';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-women-footwear',
@@ -7,7 +8,8 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./women-footwear.component.css'],
 })
 export class WomenFootwearComponent {
-  constructor(private cartService : CartService){}
+  isloggedin = false;
+  constructor(private cartService : CartService, private log : LoggedUserService){}
   women_footwear = [
     {
       id : '2201',
@@ -159,6 +161,7 @@ export class WomenFootwearComponent {
     $("button").click(function(){
       $('#side').toggle();
     })
+    this.isloggedin = this.log.isloggedIn;
     }
     filteredWomenData:any;
     sortingOption: string = 'price';

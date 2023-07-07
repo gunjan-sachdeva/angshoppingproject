@@ -1,7 +1,7 @@
 
 <div class="container mt-4 myform">
     <h1 class="text-center">
-        Create an Account
+        Edit My Profile
     </h1>
     <form #register = "ngForm" (ngSubmit)="register.form.valid && registerfn()">
         
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Update Email</label>
             <input type="email" class="form-control" id = "email" placeholder="email address...." [(ngModel)]="form.email" name="email" #email = "ngModel" required maxlength="32" [pattern]="emailRegex" [ngClass]="{error: email.errors && email.touched}">
             <div *ngIf="email.errors && email.touched">
                 <small class="text-danger" *ngIf="email.errors['required']">
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="mb-3">
-            <label for="address" class="form-label">Address</label>
+            <label for="address" class="form-label">Permanent Address</label>
             <textarea class="form-control" placeholder="Leave a address here" id="address" class = "form-control" [(ngModel)]="form.address" name="address" #address = "ngModel" required maxlength="200" [ngClass]="{error: address.errors && address.touched}"></textarea>
             <div *ngIf="address.errors && address.touched">
                 <small class="text-danger" *ngIf="address.errors['required']">

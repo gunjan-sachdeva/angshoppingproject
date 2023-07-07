@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CartService } from '../services/cart.service';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-men-trouser',
@@ -8,7 +9,8 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./men-trouser.component.css']
 })
 export class MenTrouserComponent {
-  constructor(private cartService : CartService, private http : HttpClient){}
+  isloggedin = false;
+  constructor(private cartService : CartService, private http : HttpClient, private log : LoggedUserService){}
   ngOnInit(): void {
 
   this.filteredData = this.mens_shirt;
@@ -21,7 +23,7 @@ export class MenTrouserComponent {
     this.mens_shirt = res;
     this.filteredData=this.mens_shirt;
   })
-  
+  this.isloggedin = this.log.isloggedIn;
   }
   filteredData:any;
   mens_shirt:any = [];

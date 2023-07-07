@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-stripe',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stripe.component.css']
 })
 export class StripeComponent implements OnInit {
-  constructor() { }
+  constructor(private router : Router, private cartService : CartService) { }
+  amount:any;
+  route(){
+    this.router.navigate(['placed'])
+  }
   handler:any = null;
   ngOnInit() {
- 
+    this.amount = this.cartService.getTotalPrice()
     this.loadStripe();
   }
  
@@ -25,12 +31,15 @@ export class StripeComponent implements OnInit {
         alert('Token Created!!');
       }
     });
+    
  
     handler.open({
       name: 'Demo Site',
       description: '2 widgets',
       amount: amount * 100
     });
+
+    this.route();
  
   }
  
@@ -57,4 +66,5 @@ export class StripeComponent implements OnInit {
       window.document.body.appendChild(s);
     }
   }
+ 
 }

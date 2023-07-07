@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CartService } from '../services/cart.service';
+import { LoggedUserService } from '../services/logged-user.service';
 @Component({
   selector: 'app-mens-wallet',
   templateUrl: './mens-wallet.component.html',
   styleUrls: ['./mens-wallet.component.css']
 })
 export class MensWalletComponent {
-  constructor(private cartService : CartService, private http : HttpClient){}
+  isloggedin = false;
+  constructor(private cartService : CartService, private http : HttpClient, private log : LoggedUserService){}
   ngOnInit(): void {
-
+    
   this.filteredData = this.mens_shirt;
   $("button").click(function(){
     $('#side').toggle();
@@ -20,7 +22,7 @@ export class MensWalletComponent {
     this.mens_shirt = res;
     this.filteredData=this.mens_shirt;
   })
-  
+  this.isloggedin = this.log.isloggedIn;
   }
   filteredData:any;
   mens_shirt:any = [];

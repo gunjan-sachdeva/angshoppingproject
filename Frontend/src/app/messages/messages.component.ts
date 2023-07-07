@@ -18,7 +18,7 @@ export class MessagesComponent {
 
   tickets() {
  
-    this.http.get("http://localhost:8000/cont")
+    this.http.get("http://localhost:8000/feedback")
     .subscribe((resultData: any)=>
     {
       

@@ -55,3 +55,6 @@ h4,h6{
     padding: 12px 72px;
     border-radius: 3px !important;
 }
+#name{
+    border-bottom: 1px solid black;
+}

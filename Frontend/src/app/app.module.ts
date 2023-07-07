@@ -87,6 +87,8 @@ import { FeedbackMongoComponent } from './feedback-mongo/feedback-mongo.componen
 import { OrderFormComponent } from './order-form/order-form.component';
 import { OrdersComponent } from './orders/orders.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { MainloginComponent } from './mainlogin/mainlogin.component';
+import { MainsignupComponent } from './mainsignup/mainsignup.component';
 
 
 
@@ -167,6 +169,8 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
     OrderFormComponent,
     OrdersComponent,
     DynamicFormComponent,
+    MainloginComponent,
+    MainsignupComponent,
     
   ],
   imports: [

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { HttpClient } from '@angular/common/http';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,10 +12,16 @@ import { ProductDetailsComponent } from '../product-details/product-details.comp
 export class NavbarComponent implements OnInit {
 
   public totalItem : number = 0;
-  constructor(private cartService : CartService, private http : HttpClient, private detail : ProductDetailsComponent){}
+  constructor(private cartService : CartService, private http : HttpClient,
+     private detail : ProductDetailsComponent
+     , private log : LoggedUserService){}
   searchText:any;
   all:any = [];
   showSearch = false;
+
+    logout(){
+      this.log.loggedUser = null;
+    }
 
     show(){
       this.showSearch = true;
@@ -38,5 +45,6 @@ export class NavbarComponent implements OnInit {
       console.log(res);
       this.all = res;
      })
+    
    }
 }

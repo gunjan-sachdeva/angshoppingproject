@@ -1,3 +1,28 @@
-*{
-    font-weight: bold;
-}
+.container-fluid {
+    padding: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .card-text {
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+
+  .card-text strong {
+    color: #333;
+  }

@@ -368,9 +368,8 @@
       "instock": true,
       "quantity": 1
     }
-    
   ],
-  "wallets":[
+  "wallets": [
     {
       "id": 7770,
       "image": "../../assets/images/wallet1.jpg",
@@ -491,7 +490,7 @@
       "instock": true,
       "quantity": 1
     }
-  ],  
+  ],
   "men_trouser": [
     {
       "id": 5550,
@@ -670,7 +669,6 @@
       "rating": "⭐⭐⭐⭐⭐"
     }
   ],
-  
   "all": [
     {
       "id": 30,
@@ -822,7 +820,6 @@
       "instock": true,
       "quantity": 1
     },
-    
     {
       "id": 5550,
       "image": "../../assets/images/trouser1.jpg",
@@ -1768,8 +1765,8 @@
       "rating": "⭐⭐⭐⭐",
       "brand": "adidas",
       "instock": true
-      },
-      {
+    },
+    {
       "id": "2202",
       "image": "../../assets/images/footwear2.jpg",
       "title": "White Sneakers",
@@ -1780,8 +1777,8 @@
       "brand": "reebok",
       "quantity": 1,
       "instock": true
-      },
-      {
+    },
+    {
       "id": "2203",
       "image": "../../assets/images/footwear3.jpg",
       "title": "Leather Boots",
@@ -1792,8 +1789,8 @@
       "brand": "adidas",
       "quantity": 1,
       "instock": true
-      },
-      {
+    },
+    {
       "id": "2204",
       "image": "../../assets/images/footwear4.jpg",
       "title": "Ballet Flats",
@@ -1804,8 +1801,8 @@
       "instock": true,
       "rating": "⭐⭐⭐⭐",
       "brand": "adidas"
-      },
-      {
+    },
+    {
       "id": "2205",
       "image": "../../assets/images/footwear5.jpg",
       "title": "Wedge Sandals",
@@ -1816,8 +1813,8 @@
       "instock": true,
       "rating": "⭐⭐⭐⭐⭐",
       "brand": "sparx"
-      },
-      {
+    },
+    {
       "id": "2206",
       "image": "../../assets/images/footwear6.jpg",
       "title": "Ankle Boots",
@@ -1828,8 +1825,8 @@
       "quantity": 1,
       "rating": "⭐⭐⭐⭐",
       "brand": "adidas"
-      },
-      {
+    },
+    {
       "id": "2207",
       "image": "../../assets/images/footwear7.jpg",
       "title": "Espadrilles",
@@ -1840,212 +1837,237 @@
       "rating": "⭐⭐⭐⭐⭐",
       "instock": false,
       "brand": "reebok"
-      },
-      {
-        "id": "2208",
-        "image": "../../assets/images/footwear8.jpg",
-        "title": "Stiletto Heels",
-        "description": "Women's Pointed Toe Shoes",
-        "price": 49.99,
-        "quantity": 1,
-        "total": 49.99,
-        "rating": "⭐⭐⭐⭐",
-        "instock": true,
-        "brand": "adidas"
-      },
-      {
-        "id": "2209",
-        "image": "../../assets/images/footwear9.jpg",
-        "title": "Lace-Up Boots",
-        "description": "Women's Combat Boots",
-        "price": 79.99,
-        "quantity": 1,
-        "total": 79.99,
-        "rating": "⭐⭐⭐⭐⭐",
-        "instock": true,
-        "brand": "nike"
-      },
-      {
-        "id": "2210",
-        "image": "../../assets/images/footwear10.jpg",
-        "title": "Flat Sandals",
-        "description": "Women's Strappy Sandals",
-        "price": 29.99,
-        "quantity": 1,
-        "total": 29.99,
-        "rating": "⭐⭐⭐⭐",
-        "instock": false,
-        "brand": "adidas"
-      },
-      {
-        "id": "2211",
-        "image": "../../assets/images/footwear11.jpg",
-        "title": "Pumps",
-        "description": "Women's Classic High Heel Shoes",
-        "price": 59.99,
-        "quantity": 1,
-        "total": 59.99,
-        "rating": "⭐⭐⭐⭐⭐",
-        "instock": true,
-        "brand": "nike"
-      },
-      {
-        "id": "2212",
-        "image": "../../assets/images/footwear12.jpg",
-        "title": "Sneaker Boots",
-        "description": "Women's Fashionable High-Top Sneakers",
-        "price": 69.99,
-        "quantity": 1,
-        "total": 69.99,
-        "rating": "⭐⭐⭐⭐",
-        "instock": true,
-        "brand": "sparx"
-      },
-      {
-        "id": 112,
-        "image": "../../assets/images/purse1.jpg",
-        "title": "Leather Crossbody Bag",
-        "description": "Stylish and functional leather crossbody bag for women",
-        "price": 49.99,
-        "quantity": 1,
-        "total": 49.99,
-        "rating": "⭐⭐⭐⭐⭐",
-        "brand": "lavie",
-        "instock": true
-        },
-        {
-        "id": 111,
-        "image": "../../assets/images/purse2.jpg",
-        "title": "Canvas Tote Bag",
-        "description": "Large capacity canvas tote bag for women",
-        "price": 39.99,
-        "total": 39.99,
-        "rating": "⭐⭐⭐⭐",
-        "quantity": 1,
-        "brand": "ladida",
-        "instock": false
-        },
-        {
-        "id": 110,
-        "image": "../../assets/images/purse3.jpg",
-        "title": "Shoulder Bag",
-        "description": "Casual shoulder bag for women",
-        "price": 29.99,
-        "total": 29.99,
-        "rating": "⭐⭐⭐⭐",
-        "quantity": 1,
-        "brand": "lavie",
-        "instock": true
-        },
-        {
-        "id": 109,
-        "image": "../../assets/images/purse4.jpg",
-        "title": "Satchel Bag",
-        "description": "Elegant satchel bag for women",
-        "price": 59.99,
-        "total": 59.99,
-        "quantity": 1,
-        "rating": "⭐⭐⭐⭐⭐",
-        "brand": "ladida",
-        "instock": false
-        },
-        {
-        "id": 108,
-        "image": "../../assets/images/purse5.jpg",
-        "title": "Clutch Bag",
-        "description": "Chic and versatile clutch bag for women",
-        "price": 19.99,
-        "total": 19.99,
-        "rating": "⭐⭐⭐⭐",
-        "quantity": 1,
-        "brand": "lavie",
-        "instock": true
-        },
-        {
-        "id": 107,
-        "image": "../../assets/images/purse6.jpg",
-        "title": "Backpack",
-        "description": "Functional and stylish backpack for women",
-        "price": 49.99,
-        "total": 49.99,
-        "rating": "⭐⭐⭐⭐",
-        "quantity": 1,
-        "brand": "hidesign",
-        "instock": true
-        },
-        {
-        "id": 106,
-        "image": "../../assets/images/purse7.jpg",
-        "title": "Hobo Bag",
-        "description": "Casual hobo bag for women",
-        "price": 39.99,
-        "quantity": 1,
-        "total": 39.99,
-        "rating": "⭐⭐⭐⭐",
-        "brand": "lavie",
-        "instock": true
-        },
-        {
-          "id": 105,
-          "image": "../../assets/images/purse8.jpg",
-          "title": "Tote Bag",
-          "description": "Classic and versatile tote bag for women",
-          "price": 29.99,
-          "total": 29.99,
-          "quantity": 1,
-          "rating": "⭐⭐⭐⭐⭐",
-          "brand": "esbeda",
-          "instock": true
-          },
-          {
-          "id": 104,
-          "image": "../../assets/images/purse9.jpg",
-          "title": "Crossbody Clutch",
-          "description": "Elegant crossbody clutch for women",
-          "price": 59.99,
-          "total": 59.99,
-          "quantity": 1,
-          "rating": "⭐⭐⭐⭐",
-          "brand": "lavie",
-          "instock": true
-          },
-          {
-          "id": 103,
-          "image": "../../assets/images/purse10.jpg",
-          "title": "Mini Backpack",
-          "description": "Small and cute mini backpack for women",
-          "price": 19.99,
-          "total": 19.99,
-          "quantity": 1,
-          "rating": "⭐⭐⭐⭐⭐",
-          "brand": "hidesign",
-          "instock": true
-          },
-          {
-          "id": 102,
-          "image": "../../assets/images/purse11.jpg",
-          "title": "Sling Bag",
-          "description": "Casual and convenient sling bag for women",
-          "price": 49.99,
-          "total": 49.99,
-          "quantity": 1,
-          "rating": "⭐⭐⭐⭐",
-          "brand": "lavie",
-          "instock": true
-          },
-          {
-          "id": 101,
-          "image": "../../assets/images/purse12.jpg",
-          "title": "Wristlet",
-          "description": "Versatile and stylish wristlet for women",
-          "price": 39.99,
-          "total": 39.99,
-          "quantity": 1,
-          "rating": "⭐⭐⭐⭐",
-          "brand": "esbeda",
-          "instock": true
-          }
+    },
+    {
+      "id": "2208",
+      "image": "../../assets/images/footwear8.jpg",
+      "title": "Stiletto Heels",
+      "description": "Women's Pointed Toe Shoes",
+      "price": 49.99,
+      "quantity": 1,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": true,
+      "brand": "adidas"
+    },
+    {
+      "id": "2209",
+      "image": "../../assets/images/footwear9.jpg",
+      "title": "Lace-Up Boots",
+      "description": "Women's Combat Boots",
+      "price": 79.99,
+      "quantity": 1,
+      "total": 79.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "instock": true,
+      "brand": "nike"
+    },
+    {
+      "id": "2210",
+      "image": "../../assets/images/footwear10.jpg",
+      "title": "Flat Sandals",
+      "description": "Women's Strappy Sandals",
+      "price": 29.99,
+      "quantity": 1,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": false,
+      "brand": "adidas"
+    },
+    {
+      "id": "2211",
+      "image": "../../assets/images/footwear11.jpg",
+      "title": "Pumps",
+      "description": "Women's Classic High Heel Shoes",
+      "price": 59.99,
+      "quantity": 1,
+      "total": 59.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "instock": true,
+      "brand": "nike"
+    },
+    {
+      "id": "2212",
+      "image": "../../assets/images/footwear12.jpg",
+      "title": "Sneaker Boots",
+      "description": "Women's Fashionable High-Top Sneakers",
+      "price": 69.99,
+      "quantity": 1,
+      "total": 69.99,
+      "rating": "⭐⭐⭐⭐",
+      "instock": true,
+      "brand": "sparx"
+    },
+    {
+      "id": 112,
+      "image": "../../assets/images/purse1.jpg",
+      "title": "Leather Crossbody Bag",
+      "description": "Stylish and functional leather crossbody bag for women",
+      "price": 49.99,
+      "quantity": 1,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 111,
+      "image": "../../assets/images/purse2.jpg",
+      "title": "Canvas Tote Bag",
+      "description": "Large capacity canvas tote bag for women",
+      "price": 39.99,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐",
+      "quantity": 1,
+      "brand": "ladida",
+      "instock": false
+    },
+    {
+      "id": 110,
+      "image": "../../assets/images/purse3.jpg",
+      "title": "Shoulder Bag",
+      "description": "Casual shoulder bag for women",
+      "price": 29.99,
+      "total": 29.99,
+      "rating": "⭐⭐⭐⭐",
+      "quantity": 1,
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 109,
+      "image": "../../assets/images/purse4.jpg",
+      "title": "Satchel Bag",
+      "description": "Elegant satchel bag for women",
+      "price": 59.99,
+      "total": 59.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "ladida",
+      "instock": false
+    },
+    {
+      "id": 108,
+      "image": "../../assets/images/purse5.jpg",
+      "title": "Clutch Bag",
+      "description": "Chic and versatile clutch bag for women",
+      "price": 19.99,
+      "total": 19.99,
+      "rating": "⭐⭐⭐⭐",
+      "quantity": 1,
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 107,
+      "image": "../../assets/images/purse6.jpg",
+      "title": "Backpack",
+      "description": "Functional and stylish backpack for women",
+      "price": 49.99,
+      "total": 49.99,
+      "rating": "⭐⭐⭐⭐",
+      "quantity": 1,
+      "brand": "hidesign",
+      "instock": true
+    },
+    {
+      "id": 106,
+      "image": "../../assets/images/purse7.jpg",
+      "title": "Hobo Bag",
+      "description": "Casual hobo bag for women",
+      "price": 39.99,
+      "quantity": 1,
+      "total": 39.99,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 105,
+      "image": "../../assets/images/purse8.jpg",
+      "title": "Tote Bag",
+      "description": "Classic and versatile tote bag for women",
+      "price": 29.99,
+      "total": 29.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "esbeda",
+      "instock": true
+    },
+    {
+      "id": 104,
+      "image": "../../assets/images/purse9.jpg",
+      "title": "Crossbody Clutch",
+      "description": "Elegant crossbody clutch for women",
+      "price": 59.99,
+      "total": 59.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 103,
+      "image": "../../assets/images/purse10.jpg",
+      "title": "Mini Backpack",
+      "description": "Small and cute mini backpack for women",
+      "price": 19.99,
+      "total": 19.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐⭐",
+      "brand": "hidesign",
+      "instock": true
+    },
+    {
+      "id": 102,
+      "image": "../../assets/images/purse11.jpg",
+      "title": "Sling Bag",
+      "description": "Casual and convenient sling bag for women",
+      "price": 49.99,
+      "total": 49.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "lavie",
+      "instock": true
+    },
+    {
+      "id": 101,
+      "image": "../../assets/images/purse12.jpg",
+      "title": "Wristlet",
+      "description": "Versatile and stylish wristlet for women",
+      "price": 39.99,
+      "total": 39.99,
+      "quantity": 1,
+      "rating": "⭐⭐⭐⭐",
+      "brand": "esbeda",
+      "instock": true
+    }
   ],
-  "myArray2":[]
-
+  "myArray2": [],
+  "signup": [
+    {
+      "fname": "Manoj",
+      "lname": "Adhikari",
+      "email": "manojadhikari@gmail.com",
+      "phone": "234324234",
+      "password": "asdasdf",
+      "id": 1
+    },
+    {
+      "fname": "shivam",
+      "lname": "adhikari",
+      "email": "shivamadhikari@gmail.com",
+      "phone": "32432",
+      "password": "asdf",
+      "id": 2
+    },
+    {
+      "fname": "Shubh",
+      "lname": "Sharma",
+      "email": "shubh@gmail.com",
+      "phone": "7015293984",
+      "password": "shubh123",
+      "id": 3
+    }
+  ]
 }

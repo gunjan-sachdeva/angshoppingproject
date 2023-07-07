@@ -22,7 +22,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="lname" class="form-label">Product Name</label>
-                            <input type="text" class="form-control" id = "pname" placeholder="Last Name...." [(ngModel)]="form.pname" name="lname" #pname = "ngModel" required maxlength="32" [ngClass]="{error: pname.errors && pname.touched}">
+                            <input type="text" class="form-control" id = "pname" placeholder="Product Name...." [(ngModel)]="form.pname" name="lname" #pname = "ngModel" required maxlength="32" [ngClass]="{error: pname.errors && pname.touched}">
                             <div *ngIf="pname.errors && pname.touched">
                                 <small class="text-danger" *ngIf="pname.errors['required']">
                                     Product Name is required!
@@ -61,7 +61,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Delivery address </label>
-                            <textarea class="form-control" placeholder="Leave a comment here" id="message" class = "form-control" [(ngModel)]="form.message" name="message" #message = "ngModel" required maxlength="200" [ngClass]="{error: message.errors && message.touched}"></textarea>
+                            <textarea class="form-control" placeholder="Enter Your Permanent Address..." id="message" class = "form-control" [(ngModel)]="form.message" name="message" #message = "ngModel" required maxlength="200" [ngClass]="{error: message.errors && message.touched}"></textarea>
                             <div *ngIf="message.errors && message.touched">
                                 <small class="text-danger" *ngIf="message.errors['required']">
                                     Message is required.

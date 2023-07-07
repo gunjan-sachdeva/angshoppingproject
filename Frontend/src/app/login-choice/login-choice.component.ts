@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ChoiceService } from '../services/choice.service';
 @Component({
   selector: 'app-login-choice',
   templateUrl: './login-choice.component.html',
@@ -8,8 +9,9 @@ import { Router } from '@angular/router';
 export class LoginChoiceComponent {
   log = false;
   custom = false;
-  constructor(private router: Router){}
+  constructor(private router: Router, private choice : ChoiceService){}
   redirectToAdminLogin(){
+    
     this.router.navigate(['/admin_login']);
   }
   redirectToCustomerLogin(){

@@ -44,7 +44,7 @@ ngOnInit(): void {
         return actions.order.capture().then((details : any)=>{
           if(details.status === 'COMPLETED'){
             this.payment.transactionID = details.id;
-            this.router.navigate(['confirm'])
+            this.router.navigate(['placed'])
           }
         });
       },

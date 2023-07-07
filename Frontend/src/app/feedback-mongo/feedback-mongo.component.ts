@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CartService } from '../services/cart.service';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-feedback-mongo',
@@ -8,7 +9,8 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./feedback-mongo.component.css']
 })
 export class FeedbackMongoComponent implements OnInit {
-constructor(private http : HttpClient, private cartService : CartService){}
+  isloggedin = false;
+constructor(private http : HttpClient, private cartService : CartService, private log : LoggedUserService){}
 data:any = [];
 searchText:any;
   ngOnInit(): void {
@@ -17,6 +19,7 @@ searchText:any;
       console.log(res)
       this.data = res;
     })
+    this.isloggedin = this.log.isloggedIn;
   }
   addtocart(item : any){
     this.cartService.addToCart(item);

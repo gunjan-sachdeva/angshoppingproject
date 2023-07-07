@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {FormGroup, FormBuilder, Validators} from '@angular/forms';
-import { AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-new-contact',
@@ -8,40 +8,41 @@ import { AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compa
   styleUrls: ['./new-contact.component.css']
 })
 export class NewContactComponent {
-  contactForm : FormGroup;
+  contactForm: FormGroup;
   isSubmit = true;
   submitMessage = '';
 
-  private myForm : AngularFirestoreCollection<any>;
+  constructor(
+    private formBuilder: FormBuilder,
+    private httpClient: HttpClient
+  ) {}
 
-constructor(private formBuilder : FormBuilder, private firestore : AngularFirestore){}
+  ngOnInit(): void {
+    this.contactForm = this.formBuilder.group({
+      name: [null, Validators.required],
+      email: [null, [Validators.required, Validators.email]],
+      orderNumber: [null, Validators.required],
+      subject: [null, Validators.required],
+      message: [null, Validators.required],
+    });
+  }
 
-ngOnInit(): void {
-  
-  this.myForm = this.firestore.collection('contact');
-  this.contactForm = this.formBuilder.group({
-    name: [null, Validators.required],
-    email: [null, [Validators.required, Validators.email]],
-    orderNumber: [null, Validators.required],
-    subject: [null, Validators.required],
-    message: [null, Validators.required],
-    
-  })
-}
-submitData(value : any){
+  submitData(value: any) {
+    this.httpClient.post('http://localhost:8000/contacts', value)
+      .subscribe(
+        () => {
+          this.submitMessage = "Submitted Successfully";
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
-  this.myForm.add(value).then(res =>{
-    this.submitMessage = "Submitted Successfully";
-  })
-  .catch(err =>{
-    console.log(err)
-  })
+    console.log(value);
+    this.isSubmit = true;
 
-console.log(value)
-this.isSubmit = true;
-
-setTimeout(() => {
-  this.isSubmit = false;
-}, 8000);
-}
+    setTimeout(() => {
+      this.isSubmit = false;
+    }, 8000);
+  }
 }

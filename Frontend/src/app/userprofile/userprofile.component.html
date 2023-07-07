@@ -2,8 +2,8 @@
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <div *ngFor="let user of users, let i = index">
-            <div class="card" *ngIf="i === 0">
+        <div >
+            <div class="card">
                 <div class="card-header text-center">
                   <h2>User Profile</h2>
                 </div>
@@ -14,21 +14,21 @@
                   <div class="row">
                     <div class="col-md-6">
                       <h4>Name:</h4>
-                      <p class="lead">{{user.name}}</p>
+                      <p class="lead">{{loggedUser.fname}}&nbsp;{{loggedUser.lname}}</p>
                     </div>
                     <div class="col-md-6">
                       <h4>Email:</h4>
-                      <p class="lead">{{user.email}}</p>
+                      <p class="lead">{{loggedUser.email}}</p>
                     </div>
                   </div>
                   <div class="row mt-4">
                     <div class="col-md-6">
                       <h4>Mobile:</h4>
-                      <p class="lead">{{user.mobile}}</p>
+                      <p class="lead">{{loggedUser.phone}}</p>
                     </div>
                     <div class="col-md-6">
                       <h4>Address:</h4>
-                      <p class="lead">{{user.address}}</p>
+                      <p class="lead">{{loggedUser.address}}</p>
                     </div>
                   </div>
                 </div>

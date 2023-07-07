@@ -5,6 +5,7 @@ import { CartService } from '../services/cart.service';
 import { ApiService } from '../services/api.service';
 import { NavigationEnd } from '@angular/router';
 import * as $ from 'jquery';
+import { LoggedUserService } from '../services/logged-user.service';
 @Injectable({
   providedIn: 'root'
 })
@@ -20,13 +21,13 @@ export class ProductDetailsComponent implements OnInit {
   all:any = [];
   api_data = [];
 constructor(private activeRoute: ActivatedRoute, private http : HttpClient, private cartService : CartService, private api : ApiService
-  , private router: Router){
+  , private router: Router, private log : LoggedUserService){
     this.detail()
    
 }
 prevprice :any;
 totalpr :any;
-
+isloggedin = false;
 
 ngOnInit(): void {
   this.router.events.subscribe((event)=>{
@@ -34,6 +35,7 @@ ngOnInit(): void {
       this.detail();
     }
   })
+  this.isloggedin = this.log.isloggedIn;
 }
 detail(): void {
   let productId = this.activeRoute.snapshot.paramMap.get('productId');
@@ -103,15 +105,7 @@ onSubmit() {
     this.couponApplied = true;
     $()
   }
-  else  if (this.couponCode == "NEHU") {
-    // this.filteredData.price = 0.5 * this.filteredData.price;
-    
-    this.totalpr = 0.5 * this.totalpr;
-    this.filteredData.total = this.totalpr;
-    this.couponApplied = true;
-   
-    $()
-  }
+  
   else  if (this.couponCode == "OMPRAKASH") {
     // this.filteredData.price = 1.5 * this.filteredData.price;
     
@@ -120,14 +114,16 @@ onSubmit() {
     this.couponApplied = true;
     $()
   }
-  else  if (this.couponCode == "SAKSHAM") {
+  
+  else  if (this.couponCode == "50OFF") {
     // this.filteredData.price = 1.5 * this.filteredData.price;
     
-    this.totalpr = 0 * this.totalpr;
-    this.filteredData.total = 0 * this.totalpr;
+    this.totalpr = 0.5 * this.totalpr;
+    this.filteredData.total = this.totalpr;
     this.couponApplied = true;
     $()
   }
+
 }
 addtocart(item : any){
   this.cartService.addToCart(item);

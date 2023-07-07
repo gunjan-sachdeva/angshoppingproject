@@ -98,7 +98,7 @@ export class DashboardComponent {
     this.http.patch("http://localhost:8000/user/update"+ "/"+this.currentStudentID,bodyData).subscribe((resultData: any)=>
     {
         console.log(resultData);
-        alert("Student Updateddd")
+        alert("Product Updateddd")
         this.getAllStudent();
       
     });
@@ -108,7 +108,7 @@ export class DashboardComponent {
     this.http.delete("http://localhost:8000/user/delete"+ "/"+ data._id).subscribe((resultData: any)=>
     {
         console.log(resultData);
-        alert("Student Deletedddd")
+        alert("Product Deletedddd")
         this.getAllStudent();
   
     });
@@ -145,7 +145,7 @@ register()
     this.http.post("http://localhost:8000/user/create",bodyData).subscribe((resultData: any)=>
     {
         console.log(resultData);
-        alert("Student Registered Successfully")
+        alert("Product Added Successfully")
          //this.getAllEmployee();
         this.id = '';
         this.image = '';

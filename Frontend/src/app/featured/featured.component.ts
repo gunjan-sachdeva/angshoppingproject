@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-featured',
   templateUrl: './featured.component.html',
   styleUrls: ['./featured.component.css']
 })
-export class FeaturedComponent {
-  constructor(private cartService: CartService){}
+export class FeaturedComponent implements OnInit {
+  isloggedin = false;
+  constructor(private cartService: CartService, private log : LoggedUserService){}
+  ngOnInit(): void {
+    this.isloggedin = this.log.isloggedIn;
+  }
   featured = [
     {
       id : 30,

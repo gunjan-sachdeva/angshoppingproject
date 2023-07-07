@@ -21,13 +21,13 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let row of array,let user of users ,let i = index">
+                        <tr *ngFor="let row of array,let i = index">
                           <th scope="row">{{array[i].title}}</th>
                           <td>{{array[i].description}}</td>
                           <td>{{array[i].price}}</td>
                           <td>{{array[i].quantity}}</td>
-                          <td>{{user.address}}</td>
-                          <td>{{user.mobile}}</td>
+                          <td>{{myuser.address}}</td>
+                          <td>{{myuser.phone}}</td>
                         </tr>
                                               </tbody>
                     </table>

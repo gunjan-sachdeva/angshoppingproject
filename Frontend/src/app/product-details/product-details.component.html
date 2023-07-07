@@ -45,7 +45,8 @@
         
         <!-- <p>total price : {{totalpr}}</p> -->
         <div class="d-grid gap-2">
-          <button class="btn btn-primary btn-lg add-to-cart" type="button" (click)="addtocart(filteredData)" id="add">Add to Cart
+          <button class="btn btn-primary btn-lg add-to-cart" type="button" (click)="addtocart(filteredData)"
+           id="add" [disabled]="!isloggedin">Add to Cart
             <i class="fas fa-cart-plus" id = "cart-logo"></i>
           </button>
         </div>

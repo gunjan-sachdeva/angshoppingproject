@@ -3,6 +3,7 @@ import { CartService } from '../services/cart.service';
 import { AuthGuard } from '../auth.guard';
 import Swal from 'sweetalert2';
 import { SharedService } from '../shared/shared.service';
+import { LoggedUserService } from '../services/logged-user.service';
 
 @Component({
   selector: 'app-cart',
@@ -15,7 +16,8 @@ export class CartComponent implements OnInit {
  public products : any = [];
  public grandTotal !: number;
  public finalPrice !: number;
- constructor(private cartService : CartService, private shared : SharedService){}
+ user:any;
+ constructor(private cartService : CartService, private shared : SharedService, private log : LoggedUserService){}
  message = "hi";
  ngOnInit(): void {
    this.cartService.getProducts()
@@ -26,6 +28,7 @@ export class CartComponent implements OnInit {
       this.grandTotal = this.cartService.getTotalPrice();
    })
    this.shared.setMessage(this.message);
+   this.user = this.log.loggedUser;
  }
  removeItem(item :any){
   Swal.fire({

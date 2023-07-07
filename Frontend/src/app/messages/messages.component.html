@@ -1,16 +1,16 @@
 <div class="container-fluid">
-    <div class="row">
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-2">
-        <div class="card" *ngFor="let ticket of ticketsArray, let i = index">
-          <div class="card-body">
-            <h5 class="card-title"><b>Ticket {{i + 1}}</b></h5>
-            <p class="card-text">{{ticket.name}}</p>
-            <p class="card-text">Email: {{ticket.email}}</p>
-            <p class="card-text">Message: {{ticket.message}}.</p>
-            <p class="card-text">Category: {{ticket.subject}}</p>
-            <p class="card-text">Order Number: {{ticket.orderNumber}}</p>
-          </div>
+  <div class="row">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-2">
+      <div class="card" *ngFor="let ticket of ticketsArray; let i = index">
+        <div class="card-body">
+          <h5 class="card-title"><b>Ticket {{i + 1}}</b></h5>
+          <p class="card-text"><strong>Name:</strong> {{ticket.name}}</p>
+          <p class="card-text"><strong>Email:</strong> {{ticket.email}}</p>
+          <p class="card-text"><strong>Message:</strong> {{ticket.message}}</p>
+          <p class="card-text"><strong>Category:</strong> {{ticket.subject}}</p>
+          <p class="card-text"><strong>Order Number:</strong> {{ticket.orderNumber}}</p>
         </div>
       </div>
     </div>
   </div>
+</div>

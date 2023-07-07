@@ -1,50 +1,45 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
-import {FormGroup, FormBuilder, Validators} from '@angular/forms';
-import { AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
-
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-feedback-material',
   templateUrl: './feedback-material.component.html',
   styleUrls: ['./feedback-material.component.css']
 })
-export class FeedbackMaterialComponent implements OnInit{
+export class FeedbackMaterialComponent implements OnInit {
 
-  contactForm : FormGroup;
+  contactForm: FormGroup;
   isSubmit = true;
   submitMessage = '';
 
-  private myForm : AngularFirestoreCollection<any>;
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
-constructor(private formBuilder : FormBuilder, private firestore : AngularFirestore){}
+  ngOnInit(): void {
+    this.contactForm = this.formBuilder.group({
+      name: [null, Validators.required],
+      email: [null, [Validators.required, Validators.email]],
+      orderNumber: [null, Validators.required],
+      subject: [null, Validators.required],
+      message: [null, Validators.required],
+    });
+  }
 
-ngOnInit(): void {
-  
-  this.myForm = this.firestore.collection('feedback');
-  this.contactForm = this.formBuilder.group({
-    name: [null, Validators.required],
-    email: [null, [Validators.required, Validators.email]],
-    orderNumber: [null, Validators.required],
-    subject: [null, Validators.required],
-    message: [null, Validators.required],
-    
-  })
-}
-submitData(value : any){
+  submitData(value: any): void {
+    this.http.post<any>('http://localhost:8000/feedback', value).subscribe(
+      (response) => {
+        this.submitMessage = 'Submitted Successfully';
+        console.log(response);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
 
-  this.myForm.add(value).then(res =>{
-    this.submitMessage = "Submitted Successfully";
-  })
-  .catch(err =>{
-    console.log(err)
-  })
+    this.isSubmit = true;
 
-console.log(value)
-this.isSubmit = true;
-
-setTimeout(() => {
-  this.isSubmit = false;
-}, 8000);
-}
+    setTimeout(() => {
+      this.isSubmit = false;
+    }, 8000);
+  }
 }
